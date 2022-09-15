@@ -1,0 +1,27 @@
+h1 {
+	margin: 0;
+
+	@media screen and (min-width: $breakpoint) {
+		text-align: center;
+	}
+}
+
+body {
+	font-family: 'Abel', sans-serif;
+	padding: 1.5rem;
+
+	@media screen and (min-width: $breakpoint) {
+		padding: 2rem;
+	}
+}
+
+body {
+	background: white;
+	color: #0f0f0f;
+	transition: background 0.2s ease;
+}
+
+body.dark-mode {
+	background: #0f0f0f;
+	color: white;
+}
