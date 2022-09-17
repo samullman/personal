@@ -1,11 +1,38 @@
 <script>
+	import Drawer from 'svelte-drawer-component';
+	let hidden = true;
+	export let showOnPx = 150;
+	let open = false;
+
+	function goTop() {
+		document.body.scrollIntoView({ behavior: 'smooth' });
+	}
+
 	function toggle() {
 		window.document.body.classList.toggle('dark-mode');
 	}
+
+	function scrollContainer() {
+		return document.documentElement || document.body;
+	}
+
+	function handleOnScroll() {
+		if (!scrollContainer()) {
+			return;
+		}
+
+		if (scrollContainer().scrollTop > showOnPx) {
+			hidden = false;
+		} else {
+			hidden = true;
+		}
+	}
 </script>
 
+<svelte:window on:scroll={handleOnScroll} />
+
 <div class="header">
-	<button class="chevron-button">
+	<button class="chevron-button back-to-top" on:click={goTop} class:hidden>
 		<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
 			><title>Chevron Up</title><path
 				fill="none"
@@ -40,7 +67,7 @@
 		>
 	</button>
 
-	<button class="menu-button">
+	<button class="menu-button" on:click={() => (open = true)}>
 		<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
 			><title>Reorder Two</title><path
 				fill="none"
@@ -53,6 +80,32 @@
 		</svg>
 	</button>
 </div>
+
+<Drawer {open} size="50%" placement="right" duration="0.2" on:clickAway={() => (open = false)}>
+	<div class="drawer">
+		<button class="close-button" on:click={() => (open = false)}>
+			<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
+				><title>Close</title><path
+					fill="none"
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="32"
+					d="M368 368L144 144M368 144L144 368"
+				/></svg
+			>
+		</button>
+
+		<div class="contents">
+			<nav>
+				<a href="/">Home</a>
+				<a href="/about">About</a>
+				<a href="/services">Services</a>
+				<a href="/contact">Contact</a>
+			</nav>
+		</div>
+	</div>
+</Drawer>
 
 <style lang="scss">
 	.header {
@@ -115,5 +168,30 @@
 		svg {
 			width: 1.7rem;
 		}
+		opacity: 1;
+		transition: 0.2s ease;
+	}
+
+	.back-to-top.hidden {
+		display: none;
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.close-button {
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+	}
+
+	.drawer {
+		padding: 1rem;
+		color: green;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
 	}
 </style>

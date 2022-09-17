@@ -15,7 +15,9 @@
 </nav>
 
 <main>
-	<slot />
+	<div class="page">
+		<slot />
+	</div>
 </main>
 
 <hr />
@@ -57,6 +59,13 @@
 
 	main {
 		min-height: 60vh;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.page {
+		max-width: 40rem;
+		margin: 0 auto;
 	}
 
 	hr {
