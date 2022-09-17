@@ -1,16 +1,58 @@
+<script>
+	const data = [
+		{
+			title: 'Solar',
+			image: '/panels.jpg'
+		},
+
+		{
+			title: 'Solar',
+			image: '/panels.jpg'
+		},
+
+		{
+			title: 'Solar',
+			image: '/panels.jpg'
+		}
+	];
+</script>
+
 <h1>Services</h1>
-<p>I was born in Portland, Oregon, USA in October of '89</p>
+<p>
+	We help individuals and businesses become energetically independent and financially free through:
+</p>
 
-<p>I moved to Austin, Texas, USA in September of '21</p>
+<ul class="services-list">
+	{#each data as item}
+		<li>
+			<p>{item.title}</p>
+			<img src={item.image} alt={item.title} />
+		</li>
+	{/each}
+</ul>
 
-<!-- <p>Baptized August, 21, 2022.</p> -->
+<h2>Additional Services</h2>
 
-<p>My life has been a journey towards discovering the one source of truth</p>
+<style lang="scss">
+	h2 {
+		text-align: center;
+	}
 
-<p>It's in you. You must learn to listen to it again</p>
+	.services-list {
+		display: flex;
+		list-style: none;
+		padding: 0;
+		gap: 1.5rem;
+		margin-bottom: 3rem;
 
-<!-- <p>I've struggled, fallen, gotten up, fallen again.</p> -->
+		li {
+			display: block;
+			width: 100%;
+			flex: 1;
 
-<!-- <p>The process has been hard, painful</p> -->
-
-<!-- <p>But, I'm still here.</p> -->
+			img {
+				width: 100%;
+			}
+		}
+	}
+</style>

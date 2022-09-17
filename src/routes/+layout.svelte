@@ -64,6 +64,7 @@
 	}
 
 	.page {
+		padding-top: 1rem;
 		max-width: 40rem;
 		margin: 0 auto;
 	}

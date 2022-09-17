@@ -1,33 +1,33 @@
 <h1>Contact</h1>
 
-<div class="form">
+<form class="form" name="contact" netlify>
 	<div>
 		<label>Name</label>
-		<input />
+		<input name="name" />
 	</div>
 
 	<div>
 		<label>Email</label>
-		<input type="email" required />
+		<input type="email" name="name" required />
 	</div>
 
 	<div>
 		<label>Phone</label>
-		<input />
+		<input type="tel" name="name" />
 	</div>
 
 	<div>
 		<label>Organization</label>
-		<input />
+		<input name="organization" />
 	</div>
 
 	<div>
 		<label>Note</label>
-		<textarea />
+		<textarea name="message" />
 	</div>
 
-	<button> Submit </button>
-</div>
+	<button type="submit"> Submit </button>
+</form>
 
 <style lang="scss">
 	label {

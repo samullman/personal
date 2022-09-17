@@ -179,6 +179,7 @@
 	}
 
 	.close-button {
+		padding-top: 0.38rem;
 		svg {
 			width: 1.5rem;
 			height: 1.5rem;
@@ -187,7 +188,14 @@
 
 	.drawer {
 		padding: 1rem;
-		color: green;
+
+		.contents {
+			padding-top: 1rem;
+		}
+
+		@media screen and (min-width: $breakpoint) {
+			padding: 1.8rem;
+		}
 	}
 
 	nav {
