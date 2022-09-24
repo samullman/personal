@@ -1,26 +1,7 @@
 <script>
-	const data = [
-		{
-			title: 'Solar',
-			image: '/panels.jpg',
-			link: '/services/solar'
-		},
-
-		{
-			title: 'Solar',
-			image: '/panels.jpg',
-			link: '/services/solar'
-		},
-
-		{
-			title: 'Solar',
-			image: '/panels.jpg',
-			link: '/services/solar'
-		}
-	];
 </script>
 
-<h1>Services</h1>
+<h1>Solar</h1>
 
 <br />
 
@@ -28,18 +9,12 @@
 	We help individuals and businesses become energetically independent and financially free through:
 </p>
 
-<ul class="services-list">
-	{#each data as item}
-		<li>
-			<a href={item.link}>
-				<h3>{item.title}</h3>
-				<img src={item.image} alt={item.title} />
-			</a>
-		</li>
-	{/each}
-</ul>
-
 <h2>Additional Services</h2>
+
+<ul>
+	<li>House cleaning</li>
+	<li>Smart home</li>
+</ul>
 
 <style lang="scss">
 	p {

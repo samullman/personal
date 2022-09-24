@@ -17,6 +17,11 @@
 <main>
 	<div class="page">
 		<slot />
+
+		<div class="forms rounded">
+			<h2>Potential customer form</h2>
+			<button> Apply now </button>
+		</div>
 	</div>
 </main>
 
@@ -57,16 +62,39 @@
 		}
 	}
 
-	main {
-		min-height: 60vh;
-		display: flex;
-		flex-direction: column;
-	}
-
 	.page {
 		padding-top: 1rem;
-		max-width: 40rem;
+		max-width: 80rem;
+		width: 100%;
 		margin: 0 auto;
+	}
+
+	.forms {
+		height: 10rem;
+		background: $dark-cyan;
+		margin-top: 1rem;
+		padding: 1.5rem;
+		text-align: center;
+
+		@media screen and (min-width: $breakpoint) {
+			padding: 2rem;
+		}
+
+		h2 {
+			color: white;
+		}
+
+		button {
+			font-size: 1.5rem;
+			padding: 1rem 2rem;
+		}
+	}
+
+	:global(.dark-mode) .forms {
+		h2 {
+			color: $dark;
+		}
+		background: $cyan;
 	}
 
 	hr {
