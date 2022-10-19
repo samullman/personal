@@ -1,10 +1,5 @@
 <h1>It's Massive</h1>
-<p>We're a energy and technology company based in Austin, TX, USA.</p>
-
-<p>
-	We help individuals and organizations achieve energy and financial independence through SMART
-	energy solutions.
-</p>
+<p>We're a energy and solar company based in Austin, TX.</p>
 
 <br />
 
@@ -13,9 +8,16 @@
 </div>
 <br />
 
+<p>We help individuals and organizations achieve smart energy solutions at their residence.</p>
+
 <style lang="scss">
 	h1 {
 		font-size: 3rem;
+	}
+
+	h2 {
+		text-align: center;
+		margin-bottom: 1rem;
 	}
 
 	p {

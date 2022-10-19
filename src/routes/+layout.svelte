@@ -8,10 +8,8 @@
 </a>
 
 <nav>
-	<a href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/services">Services</a>
-	<a href="/contact">Contact</a>
+	<!-- <a href="/">Home</a> -->
+	<!-- <a href="/contact">Contact</a> -->
 </nav>
 
 <main>
@@ -19,8 +17,12 @@
 		<slot />
 
 		<div class="forms rounded">
-			<h2>Potential customer form</h2>
-			<button> Apply now </button>
+			<!-- <a href="/contact">
+			<button> Get in touch </button>
+		</a> -->
+			<a href="https://form.jotform.com/222595190292156" target="_blank">
+				<button> Schedule </button>
+			</a>
 		</div>
 	</div>
 </main>
@@ -70,9 +72,8 @@
 	}
 
 	.forms {
-		height: 10rem;
 		background: $dark-cyan;
-		margin-top: 1rem;
+		margin-top: 2rem;
 		padding: 1.5rem;
 		text-align: center;
 
