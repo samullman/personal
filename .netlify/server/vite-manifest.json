@@ -18,7 +18,7 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-c734f11e.css"
+      "_app/immutable/assets/_layout-6fdbc32c.css"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
@@ -35,14 +35,9 @@
     "isEntry": true,
     "imports": [
       "_index.js"
-    ]
-  },
-  "src/routes/about/+page.svelte": {
-    "file": "entries/pages/about/_page.svelte.js",
-    "src": "src/routes/about/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-2805974f.css"
     ]
   },
   "src/routes/contact/+page.svelte": {
@@ -56,25 +51,6 @@
       "_app/immutable/assets/_page-2da23268.css"
     ]
   },
-  "src/routes/help/+page.svelte": {
-    "file": "entries/pages/help/_page.svelte.js",
-    "src": "src/routes/help/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-1402e164.css"
-    ]
-  },
-  "src/routes/prayer/+page.svelte": {
-    "file": "entries/pages/prayer/_page.svelte.js",
-    "src": "src/routes/prayer/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index.js"
-    ]
-  },
   "src/routes/services/+page.svelte": {
     "file": "entries/pages/services/_page.svelte.js",
     "src": "src/routes/services/+page.svelte",
@@ -83,7 +59,18 @@
       "_index.js"
     ],
     "css": [
-      "_app/immutable/assets/_page-89b5b17a.css"
+      "_app/immutable/assets/_page-478ddabd.css"
+    ]
+  },
+  "src/routes/services/solar/+page.svelte": {
+    "file": "entries/pages/services/solar/_page.svelte.js",
+    "src": "src/routes/services/solar/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-cc85b14d.css"
     ]
   },
   "_index.js": {

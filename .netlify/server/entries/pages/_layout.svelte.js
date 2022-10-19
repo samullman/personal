@@ -30,7 +30,7 @@ const Drawer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const header_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".header.svelte-1xmlpo1.svelte-1xmlpo1{position:fixed;bottom:1rem;right:1rem;display:flex;flex-direction:column;gap:0.5rem;padding:0.4rem;background:white;backdrop-filter:blur(5px);border-radius:0.5rem;overflow:hidden;border:0.2rem;transition:background 0.2s ease}@media screen and (min-width: 30rem){.header.svelte-1xmlpo1.svelte-1xmlpo1{flex-direction:row;right:1.5rem;padding:0.5rem;top:1rem;bottom:auto}}.dark-mode .header.svelte-1xmlpo1.svelte-1xmlpo1{background:#0a0a0a}.ionicon.svelte-1xmlpo1.svelte-1xmlpo1{margin:0;height:100%}.menu-button.svelte-1xmlpo1.svelte-1xmlpo1{display:block}.menu-button.svelte-1xmlpo1 svg.svelte-1xmlpo1{margin-bottom:-0.12rem;width:1.9rem}.sunny-button.svelte-1xmlpo1.svelte-1xmlpo1{padding-top:0.44rem;padding-bottom:0.42rem}@media screen and (min-width: 30rem){.sunny-button.svelte-1xmlpo1.svelte-1xmlpo1{padding-top:0.4rem}}.sunny-button.svelte-1xmlpo1 svg.svelte-1xmlpo1{width:1.6rem;margin-bottom:-0.2rem}.chevron-button.svelte-1xmlpo1.svelte-1xmlpo1{opacity:1;transition:0.2s ease}.chevron-button.svelte-1xmlpo1 svg.svelte-1xmlpo1{width:1.7rem}.back-to-top.hidden.svelte-1xmlpo1.svelte-1xmlpo1{display:none;opacity:0;visibility:hidden}.close-button.svelte-1xmlpo1.svelte-1xmlpo1{padding-top:0.38rem}.close-button.svelte-1xmlpo1 svg.svelte-1xmlpo1{width:1.5rem;height:1.5rem}.drawer.svelte-1xmlpo1.svelte-1xmlpo1{padding:1rem}.drawer.svelte-1xmlpo1 .contents.svelte-1xmlpo1{padding-top:1rem}@media screen and (min-width: 30rem){.drawer.svelte-1xmlpo1.svelte-1xmlpo1{padding:1.8rem}}nav.svelte-1xmlpo1.svelte-1xmlpo1{display:flex;flex-direction:column}",
+  code: ".header.svelte-1xmlpo1.svelte-1xmlpo1{position:fixed;bottom:1rem;right:1rem;display:flex;flex-direction:column;gap:0.5rem;padding:0.4rem;background:white;backdrop-filter:blur(5px);border-radius:0.5rem;overflow:hidden;border:0.2rem;transition:background 0.2s ease}@media screen and (min-width: 30rem){.header.svelte-1xmlpo1.svelte-1xmlpo1{flex-direction:row;right:1.5rem;padding:0.5rem;top:1rem;bottom:auto}}.dark-mode .header.svelte-1xmlpo1.svelte-1xmlpo1{background:#0a0a0a}.ionicon.svelte-1xmlpo1.svelte-1xmlpo1{margin:0;height:100%}.sunny-button.svelte-1xmlpo1.svelte-1xmlpo1{padding-top:0.44rem;padding-bottom:0.42rem}@media screen and (min-width: 30rem){.sunny-button.svelte-1xmlpo1.svelte-1xmlpo1{padding-top:0.4rem}}.sunny-button.svelte-1xmlpo1 svg.svelte-1xmlpo1{width:1.6rem;margin-bottom:-0.2rem}.chevron-button.svelte-1xmlpo1.svelte-1xmlpo1{opacity:1;transition:0.2s ease}.chevron-button.svelte-1xmlpo1 svg.svelte-1xmlpo1{width:1.7rem}.back-to-top.hidden.svelte-1xmlpo1.svelte-1xmlpo1{display:none;opacity:0;visibility:hidden}.close-button.svelte-1xmlpo1.svelte-1xmlpo1{padding-top:0.38rem}.close-button.svelte-1xmlpo1 svg.svelte-1xmlpo1{width:1.5rem;height:1.5rem}.drawer.svelte-1xmlpo1.svelte-1xmlpo1{padding:1rem}.drawer.svelte-1xmlpo1 .contents.svelte-1xmlpo1{padding-top:1rem}@media screen and (min-width: 30rem){.drawer.svelte-1xmlpo1.svelte-1xmlpo1{padding:1.8rem}}nav.svelte-1xmlpo1.svelte-1xmlpo1{display:flex;flex-direction:column}",
   map: null
 };
 const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -45,7 +45,7 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 	<button class="${"sunny-button svelte-1xmlpo1"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"ionicon svelte-1xmlpo1"}" viewBox="${"0 0 512 512"}"><title>Sunny</title><path fill="${"none"}" stroke="${"currentColor"}" stroke-linecap="${"round"}" stroke-miterlimit="${"10"}" stroke-width="${"32"}" d="${"M256 48v48M256 416v48M403.08 108.92l-33.94 33.94M142.86 369.14l-33.94 33.94M464 256h-48M96 256H48M403.08 403.08l-33.94-33.94M142.86 142.86l-33.94-33.94"}"></path><circle cx="${"256"}" cy="${"256"}" r="${"80"}" fill="${"none"}" stroke="${"currentColor"}" stroke-linecap="${"round"}" stroke-miterlimit="${"10"}" stroke-width="${"32"}"></circle></svg></button>
 
-	<button class="${"menu-button svelte-1xmlpo1"}"><svg xmlns="${"http://www.w3.org/2000/svg"}" class="${"ionicon svelte-1xmlpo1"}" viewBox="${"0 0 512 512"}"><title>Reorder Two</title><path fill="${"none"}" stroke="${"currentColor"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}" stroke-width="${"32"}" d="${"M112 304h288M112 208h288"}"></path></svg></button></div>
+	</div>
 
 ${validate_component(Drawer, "Drawer").$$render(
     $$result,
@@ -70,21 +70,22 @@ ${validate_component(Drawer, "Drawer").$$render(
 });
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "nav.svelte-pi5pbk.svelte-pi5pbk{display:flex;gap:0.5rem;margin:1rem 0rem}nav.svelte-pi5pbk a.svelte-pi5pbk{color:#3a3a3a;transition:color 0.2s ease}@media screen and (min-width: 30rem){nav.svelte-pi5pbk.svelte-pi5pbk{justify-content:center}}.dark-mode nav.svelte-pi5pbk a.svelte-pi5pbk{color:#cacaca}.logo.svelte-pi5pbk.svelte-pi5pbk{width:10rem;margin-bottom:1rem;display:block}@media screen and (min-width: 30rem){.logo.svelte-pi5pbk.svelte-pi5pbk{margin:0 auto;margin-bottom:1rem}}main.svelte-pi5pbk.svelte-pi5pbk{min-height:60vh;display:flex;flex-direction:column}.page.svelte-pi5pbk.svelte-pi5pbk{padding-top:1rem;max-width:40rem;margin:0 auto}hr.svelte-pi5pbk.svelte-pi5pbk{margin:2rem 0 1rem 0}",
+  code: "nav.svelte-gk2g81.svelte-gk2g81{display:flex;gap:0.5rem;margin:1rem 0rem}@media screen and (min-width: 30rem){nav.svelte-gk2g81.svelte-gk2g81{justify-content:center}}.logo.svelte-gk2g81.svelte-gk2g81{width:10rem;margin-bottom:1rem;display:block}@media screen and (min-width: 30rem){.logo.svelte-gk2g81.svelte-gk2g81{margin:0 auto;margin-bottom:1rem}}.page.svelte-gk2g81.svelte-gk2g81{padding-top:1rem;max-width:80rem;width:100%;margin:0 auto}.forms.svelte-gk2g81.svelte-gk2g81{background:#199681;margin-top:2rem;padding:1.5rem;text-align:center}@media screen and (min-width: 30rem){.forms.svelte-gk2g81.svelte-gk2g81{padding:2rem}}.forms.svelte-gk2g81 button.svelte-gk2g81{font-size:1.5rem;padding:1rem 2rem}.dark-mode .forms.svelte-gk2g81.svelte-gk2g81{background:#26e2e2}hr.svelte-gk2g81.svelte-gk2g81{margin:2rem 0 1rem 0}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<a href="${"/"}" preload><img class="${"logo svelte-pi5pbk"}" src="${"/max-logo.png"}" alt="${"Massive Logo"}"></a>
+  return `<a href="${"/"}" preload><img class="${"logo svelte-gk2g81"}" src="${"/max-logo.png"}" alt="${"Massive Logo"}"></a>
 
-<nav class="${"svelte-pi5pbk"}"><a href="${"/"}" class="${"svelte-pi5pbk"}">Home</a>
-	<a href="${"/about"}" class="${"svelte-pi5pbk"}">About</a>
-	<a href="${"/services"}" class="${"svelte-pi5pbk"}">Services</a>
-	<a href="${"/contact"}" class="${"svelte-pi5pbk"}">Contact</a></nav>
+<nav class="${"svelte-gk2g81"}">
+	</nav>
 
-<main class="${"svelte-pi5pbk"}"><div class="${"page svelte-pi5pbk"}">${slots.default ? slots.default({}) : ``}</div></main>
+<main><div class="${"page svelte-gk2g81"}">${slots.default ? slots.default({}) : ``}
 
-<hr class="${"svelte-pi5pbk"}">
+		<div class="${"forms rounded svelte-gk2g81"}">
+			<a href="${"https://form.jotform.com/222595190292156"}" target="${"_blank"}"><button class="${"svelte-gk2g81"}">Schedule </button></a></div></div></main>
+
+<hr class="${"svelte-gk2g81"}">
 <div>Massive Technologes, LLC</div>
 <div>2022</div>
 

@@ -8,23 +8,25 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<h1>Contact</h1>
 
-<form class="${"form svelte-bf0dl6"}" name="${"contact"}" netlify><div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Name</label>
-		<input name="${"name"}"></div>
+<div class="${"grid"}"><div><iframe width="${"600"}" height="${"450"}" style="${"border:0"}" loading="${"lazy"}" allowfullscreen referrerpolicy="${"no-referrer-when-downgrade"}" src="${"https://www.google.com/maps/embed/v1/place?key=API_KEY\n    &q=Space+Needle,Seattle+WA"}"></iframe></div>
 
-	<div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Email</label>
-		<input type="${"email"}" name="${"name"}" required></div>
+	<form class="${"form svelte-bf0dl6"}" name="${"contact"}" netlify><div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Name</label>
+			<input name="${"name"}"></div>
 
-	<div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Phone</label>
-		<input type="${"tel"}" name="${"name"}"></div>
+		<div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Email</label>
+			<input type="${"email"}" name="${"name"}" required></div>
 
-	<div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Organization</label>
-		<input name="${"organization"}"></div>
+		<div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Phone</label>
+			<input type="${"tel"}" name="${"name"}"></div>
 
-	<div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Note</label>
-		<textarea name="${"message"}"></textarea></div>
+		<div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Organization</label>
+			<input name="${"organization"}"></div>
 
-	<button type="${"submit"}">Submit </button>
-</form>`;
+		<div class="${"svelte-bf0dl6"}"><label class="${"svelte-bf0dl6"}">Note</label>
+			<textarea name="${"message"}"></textarea></div>
+
+		<button type="${"submit"}">Submit </button></form>
+</div>`;
 });
 export {
   Page as default
