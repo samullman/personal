@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Contact | Massive</title>
+	<meta name="description" content="Turning energy into assets." />
+</svelte:head>
+
 <h1>Contact</h1>
 
 <div class="grid">

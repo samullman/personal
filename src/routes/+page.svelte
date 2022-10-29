@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Home | Massive</title>
+	<meta name="description" content="Turning energy into assets." />
+</svelte:head>
+
 <h1>It's Massive</h1>
 <p>We're a energy and solar company based in Austin, TX.</p>
 
