@@ -45,7 +45,7 @@
 		>
 	</button>
 
-	<button class="sunny-button" on:click={toggle}>
+	<!-- <button class="sunny-button" on:click={toggle}>
 		<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
 			><title>Sunny</title><path
 				fill="none"
@@ -65,9 +65,9 @@
 				stroke-width="32"
 			/></svg
 		>
-	</button>
+	</button> -->
 
-	<!-- <button class="menu-button" on:click={() => (open = true)}>
+	<button class="menu-button" on:click={() => (open = true)}>
 		<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"
 			><title>Reorder Two</title><path
 				fill="none"
@@ -78,7 +78,7 @@
 				d="M112 304h288M112 208h288"
 			/>
 		</svg>
-	</button> -->
+	</button>
 </div>
 
 <Drawer {open} size="50%" placement="right" duration="0.2" on:clickAway={() => (open = false)}>

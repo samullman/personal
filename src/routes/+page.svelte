@@ -1,52 +1,154 @@
+<script>
+	import { page } from '$app/stores';
+	import { each } from 'svelte/internal';
+
+	const schedule = [
+		{
+			title: 'Calendly',
+			target: 'https://www.calendly.com/samullman/',
+			image: '/calendly.png'
+		}
+	];
+	const socials = [
+		{
+			title: 'Calendly',
+			target: 'https://www.calendly.com/samullman/',
+			image: '/calendly.png'
+		},
+		{
+			title: 'LinkedIn',
+			target: 'https://www.linkedin.com/in/samullman/',
+			image: '/linkedin.png'
+		},
+
+		{
+			title: 'Github',
+			target: 'https://www.github.com/samullman/',
+			image: '/github.png'
+		}
+	];
+</script>
+
 <svelte:head>
-	<title>Home | Massive</title>
-	<meta name="description" content="Turning energy into assets." />
+	<title>{$page.url.host}</title>
+	<meta name="description" content="Web Developer and entreprenuer." />
 </svelte:head>
 
-<h1>It's Massive</h1>
-<p>We're a energy and solar company based in Austin, TX.</p>
+<p class="title">Startup & Enterprise Consulting</p>
+
+<img class="rounded breaker-img" src="/hero.jpeg" alt="Galaxy" />
+
+<p class="title">
+	My name is Sam Ullman. I am interested in health, frequency, and the pursuit of true knowledge.
+</p>
+
+<img src="/crossed-arms.png" alt="Sam Ullman" class="title-img" />
+
+<p class="title">I am currently based in Austin, TX</p>
+
+<img class="rounded breaker-img" src="/forrest.jpeg" alt="Forrest" />
+
+<p class="title">Get in touch with me below:</p>
 
 <br />
 
-<div class="hero rounded">
-	<img class="rounded" src="/sunset.png" alt="Sunset" />
+<div class="logo-grid">
+	{#each socials as item}
+		<a href={item.target} target="_blank">
+			<img src={item.image} title={item.title} />
+		</a>
+	{/each}
 </div>
+
+<img class="rounded breaker-img" src="/coins.jpeg" alt="Coins" />
+
+<p class="title">Wallets:</p>
+
 <br />
 
-<p>We help individuals and organizations achieve smart energy solutions at their residence.</p>
+<div class="logo-grid">
+	{#each socials as item}
+		<a href={item.target} target="_blank">
+			<img src={item.image} title={item.title} />
+		</a>
+	{/each}
+</div>
+
+<br />
 
 <style lang="scss">
-	h1 {
-		font-size: 3rem;
-	}
-
 	h2 {
 		text-align: center;
-		margin-bottom: 1rem;
 	}
-
 	p {
 		text-align: center;
-		max-width: 40rem;
+		max-width: $breakpoint;
 		margin: 1rem auto;
 	}
 
-	.hero {
-		position: relative;
-		height: 30rem;
-		width: 100%;
+	.wallet-grid {
+		height: 600px;
+	}
 
-		.centered-text {
-			position: absolute;
-			z-index: 10;
-			height: 100%;
-			top: 0;
-			left: 0;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-			color: white;
+	.logo-grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 2rem;
+
+		img {
+			@media screen and (max-width: 500px) {
+				max-width: 100px;
+			}
+
+			@media screen and (min-width: $breakpoint) {
+				max-width: 80px;
+			}
+
+			cursor: pointer;
+			transition: all 0.2s ease;
+			object-fit: contain;
+
+			&:hover {
+				transform: scale(1.04);
+				opacity: 0.9;
+			}
+
+			&:active {
+				transform: scale(0.94);
+				opacity: 1;
+			}
 		}
+	}
+
+	h2,
+	h3 {
+		font-size: 1.5rem;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.title {
+		font-size: 1.2rem;
+	}
+
+	.name {
+		font-size: 1.14rem;
+	}
+
+	.title-img {
+		width: 8rem;
+		height: 8rem;
+		object-fit: cover;
+		border-radius: 50%;
+		margin: 1.2rem auto;
+		display: block;
+	}
+
+	.breaker-img {
+		max-height: 400px;
+		max-width: 800px;
+		margin: 2rem auto;
+		display: block;
 	}
 </style>

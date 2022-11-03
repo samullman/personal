@@ -1,39 +1,29 @@
 <script>
 	import '../../src/app.scss';
 	import Header from '../components/header.svelte';
+	import { page } from '$app/stores';
 </script>
 
-<a href="/" preload>
-	<img class="logo" src="/max-logo.png" alt="Massive Logo" />
-</a>
-
-<nav>
-	<!-- <a href="/">Home</a> -->
-	<!-- <a href="/contact">Contact</a> -->
-</nav>
+<h1>
+	{$page.url.host}
+</h1>
 
 <main>
 	<div class="page">
 		<slot />
-
-		<div class="forms rounded">
-			<!-- <a href="/contact">
-			<button> Get in touch </button>
-		</a> -->
-			<a href="https://form.jotform.com/222595190292156" target="_blank">
-				<button> Schedule </button>
-			</a>
-		</div>
 	</div>
 </main>
 
 <hr />
-<div>Massive Technologes, LLC</div>
-<div>2022</div>
+<div>{$page.url.host}</div>
 
 <Header />
 
 <style lang="scss">
+	h1 {
+		text-align: center;
+	}
+
 	nav {
 		display: flex;
 		gap: 0.5rem;
@@ -44,9 +34,7 @@
 			transition: color 0.2s ease;
 		}
 
-		@media screen and (min-width: $breakpoint) {
-			justify-content: center;
-		}
+		justify-content: center;
 	}
 
 	:global(.dark-mode) nav a {
@@ -69,6 +57,7 @@
 		max-width: 80rem;
 		width: 100%;
 		margin: 0 auto;
+		user-select: none;
 	}
 
 	.forms {
