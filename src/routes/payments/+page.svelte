@@ -1,7 +1,4 @@
 <script>
-	import { page } from '$app/stores';
-	import { each } from 'svelte/internal';
-
 	const wallet = [
 		{
 			title: 'Ethereum',
@@ -51,88 +48,31 @@
 			image: '/celo.png'
 		}
 	];
-
-	const schedule = [
-		{
-			title: 'Calendly',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/calendly.png'
-		}
-	];
-	const socials = [
-		{
-			title: 'Calendly',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/calendly.png'
-		},
-		{
-			title: 'LinkedIn',
-			target: 'https://www.linkedin.com/in/samullman/',
-			image: '/linkedin.png'
-		},
-
-		{
-			title: 'Github',
-			target: 'https://www.github.com/samullman/',
-			image: '/github.png'
-		}
-	];
 </script>
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Web Developer and entreprenuer." />
+	<title>Payments</title>
+	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
-<h1>Startup & Enterprise Consulting</h1>
+<img class="rounded breaker-img" src="/coins.jpeg" alt="Coins" />
 
-<img class="rounded breaker-img" src="/hero.jpeg" alt="Galaxy" />
+<br />
 
-<div class="page-buttons">
-	<a href="/about">
-		<button> About </button>
-	</a>
-
-	<a href="/payments">
-		<button> Payments </button>
-	</a>
-
-	<a href="/contact">
-		<button> Contact </button>
-	</a>
+<div class="logo-grid">
+	{#each wallet as item}
+		<a href={'/payment' + item.target}>
+			<img src={item.image} title={item.title} />
+		</a>
+	{/each}
 </div>
 
 <br />
 
 <style lang="scss">
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
-	}
-
-	p {
-		text-align: center;
-		max-width: $breakpoint;
-		margin: 1rem auto;
-	}
-
-	.page-buttons {
-		text-align: center;
-
-		button {
-			font-size: 1.2rem;
-			padding: 0.5rem 1rem;
-			margin: 0.25rem;
-		}
-	}
-
-	.wallet-grid {
-		height: 600px;
-	}
-
 	.logo-grid {
+		max-width: 800px;
+		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
