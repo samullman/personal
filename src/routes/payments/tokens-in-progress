@@ -1,0 +1,18 @@
+[
+	{
+		"title": "Flow",
+		"target": "/flow",
+		"pubKey": "",
+		"url": "https://flow.com/",
+		"logoSrc": "/flow.png",
+		"qrSrc": "/flow-qr.png"
+	},
+	{
+		"title": "Tezos",
+		"target": "/tezos",
+		"pubKey": "fff",
+		"url": "https://tezos.com/",
+		"logoSrc": "/tezos.png",
+		"qrSrc": "/tezos-qr.png"
+	}
+]

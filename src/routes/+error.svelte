@@ -9,7 +9,7 @@
 
 <h1>404 Not Found</h1>
 
-<Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
+<Lazy height={140} fadeOption={{ delay: 0, duration: 50 }}>
 	<img src="/flower.png" alt="Flower" />
 </Lazy>
 
