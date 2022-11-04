@@ -1,55 +1,8 @@
 <script>
 	import Lazy from 'svelte-lazy';
+	import wallet from './tokens.json';
 
-	const wallet = [
-		{
-			title: 'Ethereum',
-			target: '/ethereum',
-			image: '/eth.png'
-		},
-
-		{
-			title: 'Bitcoin',
-			target: '/bitcoin',
-			image: '/bitcoin.png'
-		},
-
-		{
-			title: 'Solana',
-			target: '/solana',
-			image: '/sol.png'
-		},
-
-		{
-			title: 'Near',
-			target: '/near',
-			image: '/near.png'
-		},
-
-		{
-			title: 'Doge',
-			target: '/doge',
-			image: '/doge.png'
-		},
-
-		{
-			title: 'Avalanche',
-			target: '/avalanche',
-			image: '/avax.png'
-		},
-
-		{
-			title: 'Tezos',
-			target: '/tezos',
-			image: '/tezos.png'
-		},
-
-		{
-			title: 'Celo',
-			target: '/celo',
-			image: '/celo.png'
-		}
-	];
+	console.log(wallet[0]);
 </script>
 
 <svelte:head>
@@ -68,7 +21,7 @@
 <div class="logo-grid">
 	{#each wallet as item}
 		<a href={'/payments' + item.target}>
-			<img src={'/tokens' + item.image} title={item.title} />
+			<img src={'/tokens' + item.logoSrc} title={item.title} />
 		</a>
 	{/each}
 </div>

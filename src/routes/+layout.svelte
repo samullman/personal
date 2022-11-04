@@ -73,7 +73,6 @@
 		max-width: 80rem;
 		width: 100%;
 		margin: 0 auto;
-		user-select: none;
 	}
 
 	.forms {

@@ -1,4 +1,5 @@
 <script>
+	import Lazy from 'svelte-lazy';
 	import { error } from '@sveltejs/kit';
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -25,7 +26,7 @@
 			title: 'Celo',
 			url: 'https://celo.org/',
 			logoSrc: '/celo.png',
-			qrSrc: ''
+			qrSrc: '/celo-qr.png'
 		},
 
 		solana: {
@@ -50,14 +51,6 @@
 			url: 'https://dogecoin.com/',
 			logoSrc: '/doge.png',
 			qrSrc: '/doge-qr.png'
-		},
-
-		avalanche: {
-			pubKey: '0xeDa5C156989C9b0f7BC020aA07cAf01DCd491fa5',
-			title: 'Avalanche',
-			url: 'https://www.avax.network/',
-			logoSrc: '/avax.png',
-			qrSrc: '/avax-qr.png'
 		},
 
 		avalanche: {
@@ -100,12 +93,16 @@
 <div class="img-grid">
 	<div>
 		<a href={token.url} target="_blank">
-			<img class="logo" src={'/tokens' + token.logoSrc} alt={token.title + ' Logo'} />
+			<Lazy height={100} fadeOption={{ delay: 0, duration: 50 }}>
+				<img class="logo" src={'/tokens' + token.logoSrc} alt={token.title + ' Logo'} />
+			</Lazy>
 		</a>
 	</div>
 
 	<div>
-		<img class="qr" src={'/tokens' + token.qrSrc} alt={token.title + ' QR Code'} />
+		<Lazy height={200} fadeOption={{ delay: 0, duration: 50 }}>
+			<img class="qr" src={'/tokens' + token.qrSrc} alt={token.title + ' QR Code'} />
+		</Lazy>
 	</div>
 
 	<div>{token.pubKey}</div>
