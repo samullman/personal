@@ -1,4 +1,6 @@
 <script>
+	import Lazy from 'svelte-lazy';
+
 	const socials = [
 		{
 			title: 'Calendly',
@@ -26,7 +28,9 @@
 
 <h1>About</h1>
 
-<img class="rounded breaker-img" src="/forrest.jpeg" alt="Forrest" />
+<Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
+	<img class="rounded breaker-img" src="/forrest.jpeg" alt="Forrest" />
+</Lazy>
 
 <p class="title">
 	My name is Sam Ullman. I am interested in health, frequency, and the pursuit of true knowledge.

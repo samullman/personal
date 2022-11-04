@@ -1,98 +1,23 @@
 <script>
-	import { page } from '$app/stores';
-	import { each } from 'svelte/internal';
-
 	import Lazy from 'svelte-lazy';
-
-	const wallet = [
-		{
-			title: 'Ethereum',
-			target: '/eth',
-			image: '/eth.png'
-		},
-
-		{
-			title: 'Bitcoin',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/bitcoin.png'
-		},
-
-		{
-			title: 'Solana',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/sol.png'
-		},
-
-		{
-			title: 'Near',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/near.png'
-		},
-
-		{
-			title: 'Doge',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/doge.png'
-		},
-
-		{
-			title: 'Avalance',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/avax.png'
-		},
-
-		{
-			title: 'Tezos',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/tezos.png'
-		},
-
-		{
-			title: 'Celo',
-			target: '/celo',
-			image: '/celo.png'
-		}
-	];
-
-	const schedule = [
-		{
-			title: 'Calendly',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/calendly.png'
-		}
-	];
-	const socials = [
-		{
-			title: 'Calendly',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/calendly.png'
-		},
-		{
-			title: 'LinkedIn',
-			target: 'https://www.linkedin.com/in/samullman/',
-			image: '/linkedin.png'
-		},
-
-		{
-			title: 'Github',
-			target: 'https://www.github.com/samullman/',
-			image: '/github.png'
-		}
-	];
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>404 Not Found</title>
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
-<h1>Startup & Enterprise Consulting</h1>
+<h1>404 Not Found</h1>
 
 <Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
-	<img class="breaker-img rounded" src="/hero.jpeg" alt="Galaxy" />
+	<img src="/flower.png" alt="Flower" />
 </Lazy>
 
 <div class="page-buttons">
+	<a href="/">
+		<button> Home </button>
+	</a>
+
 	<a href="/about">
 		<button> About </button>
 	</a>
@@ -116,12 +41,11 @@
 		margin: 1rem;
 	}
 
-	p {
-		text-align: center;
-		max-width: $breakpoint;
-		margin: 1rem auto;
+	img {
+		width: 120px;
+		display: block;
+		margin: 2rem auto;
 	}
-
 	.page-buttons {
 		text-align: center;
 

@@ -1,44 +1,46 @@
 <script>
+	import Lazy from 'svelte-lazy';
+
 	const wallet = [
 		{
 			title: 'Ethereum',
-			target: '/eth',
+			target: '/ethereum',
 			image: '/eth.png'
 		},
 
 		{
 			title: 'Bitcoin',
-			target: 'https://www.calendly.com/samullman/',
+			target: '/bitcoin',
 			image: '/bitcoin.png'
 		},
 
 		{
 			title: 'Solana',
-			target: 'https://www.calendly.com/samullman/',
+			target: '/solana',
 			image: '/sol.png'
 		},
 
 		{
 			title: 'Near',
-			target: 'https://www.calendly.com/samullman/',
+			target: '/near',
 			image: '/near.png'
 		},
 
 		{
 			title: 'Doge',
-			target: 'https://www.calendly.com/samullman/',
+			target: '/doge',
 			image: '/doge.png'
 		},
 
 		{
-			title: 'Avalance',
-			target: 'https://www.calendly.com/samullman/',
+			title: 'Avalanche',
+			target: '/avalanche',
 			image: '/avax.png'
 		},
 
 		{
 			title: 'Tezos',
-			target: 'https://www.calendly.com/samullman/',
+			target: '/tezos',
 			image: '/tezos.png'
 		},
 
@@ -55,14 +57,18 @@
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
-<img class="rounded breaker-img" src="/coins.jpeg" alt="Coins" />
+<h1>Payments</h1>
+
+<Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
+	<img class="rounded breaker-img" src="/coins.jpeg" alt="Coins" />
+</Lazy>
 
 <br />
 
 <div class="logo-grid">
 	{#each wallet as item}
-		<a href={'/payment' + item.target}>
-			<img src={item.image} title={item.title} />
+		<a href={'/payments' + item.target}>
+			<img src={'/tokens' + item.image} title={item.title} />
 		</a>
 	{/each}
 </div>
@@ -70,6 +76,13 @@
 <br />
 
 <style lang="scss">
+	h1 {
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 400;
+		margin: 1rem;
+	}
+
 	.logo-grid {
 		max-width: 800px;
 		margin: 0 auto;
