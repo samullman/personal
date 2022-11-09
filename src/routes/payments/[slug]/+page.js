@@ -7,4 +7,3 @@ export function load(props) {
 
 	throw error(404, 'Not found');
 }
-

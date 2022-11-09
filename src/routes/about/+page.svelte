@@ -32,23 +32,43 @@
 	<img class="rounded breaker-img" src="/forrest.jpeg" alt="Forrest" />
 </Lazy>
 
+<div class="profile-img">
+	<img src="/crossed-arms.png" alt="Sam Ullman" />
+</div>
+
 <p class="title">
-	My name is Sam Ullman. I am interested in health, frequency, and the pursuit of true knowledge.
+	My name is Sam Ullman. I am a Fullstack JavaScript developer with an eye for performance and
+	design. I have implemented a wide array of tooling ranging from database integrations, content
+	management systems, payment processing, and web app functionality.
 </p>
 
-<p class="title">I am currently based in Austin, TX.</p>
+<p class="title">
+	<a href="/portfolio">
+		<button> Portfolio </button>
+	</a>
+</p>
+
+<p class="title">
+	I have worked for Fortune 500 companies, entreprenuers, and in Web3 hackathons (Near, Solana, and
+	more) to build out custom UIs with the latest web technologies. One thing is for sure and that is
+	we will use the most robust web assets to secure your digital footprint.
+</p>
+
+<p class="title">Based in Austin, TX, USA.</p>
 
 <br />
 
 <div class="logo-grid">
 	{#each socials as item}
 		<a href={item.target} target="_blank">
-			<img src={item.image} title={item.title} />
+			<img src={item.image} alt={item.title} />
 		</a>
 	{/each}
 </div>
 
 <br />
+
+<p class="title">Health, frequency, and the pursuit of knowledge!</p>
 
 <style lang="scss">
 	h1 {
@@ -60,12 +80,14 @@
 
 	p {
 		text-align: center;
-		max-width: $breakpoint;
+		max-width: 40rem;
 		margin: 1rem auto;
-	}
 
-	.wallet-grid {
-		height: 600px;
+		button {
+			font-size: 1.2rem;
+			padding: 0.5rem 1rem;
+			margin: 0.25rem;
+		}
 	}
 
 	.logo-grid {
@@ -99,28 +121,8 @@
 		}
 	}
 
-	h2,
-	h3 {
-		font-size: 1.5rem;
-		text-align: center;
-		text-transform: uppercase;
-	}
-
 	.title {
 		font-size: 1.2rem;
-	}
-
-	.name {
-		font-size: 1.14rem;
-	}
-
-	.title-img {
-		width: 8rem;
-		height: 8rem;
-		object-fit: cover;
-		border-radius: 50%;
-		margin: 1.2rem auto;
-		display: block;
 	}
 
 	.breaker-img {
@@ -128,5 +130,15 @@
 		max-width: 800px;
 		margin: 2rem auto;
 		display: block;
+	}
+
+	.profile-img {
+		text-align: center;
+
+		img {
+			width: 10rem;
+			height: 10rem;
+			border-radius: 50%;
+		}
 	}
 </style>

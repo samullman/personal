@@ -21,7 +21,7 @@
 <div class="logo-grid">
 	{#each wallet as item}
 		<a href={'/payments' + item.target}>
-			<img src={'/tokens' + item.logoSrc} title={item.title} />
+			<img src={'/tokens' + item.logoSrc} alt={item.title} />
 		</a>
 	{/each}
 </div>
@@ -67,30 +67,6 @@
 				opacity: 1;
 			}
 		}
-	}
-
-	h2,
-	h3 {
-		font-size: 1.5rem;
-		text-align: center;
-		text-transform: uppercase;
-	}
-
-	.title {
-		font-size: 1.2rem;
-	}
-
-	.name {
-		font-size: 1.14rem;
-	}
-
-	.title-img {
-		width: 8rem;
-		height: 8rem;
-		object-fit: cover;
-		border-radius: 50%;
-		margin: 1.2rem auto;
-		display: block;
 	}
 
 	.breaker-img {
