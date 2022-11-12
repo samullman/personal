@@ -49,9 +49,9 @@
 </p>
 
 <p class="title">
-	I have worked for Fortune 500 companies, entreprenuers, and in Web3 hackathons (Near, Solana, and
-	more) to build out custom UIs with the latest web technologies. One thing is for sure and that is
-	we will use the most robust web assets to secure your digital footprint.
+	I have worked for Fortune 500 companies, entreprenuers, and in Web3 remote teams (Near, Solana,
+	and more) to build out custom UIs with the latest web technologies. One thing is for sure and that
+	is we will use the most robust web assets to secure your digital footprint.
 </p>
 
 <p class="title">Based in Austin, TX, USA.</p>

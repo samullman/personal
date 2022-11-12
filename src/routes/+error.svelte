@@ -30,6 +30,10 @@
 	<a href="/portfolio">
 		<button> Portfolio </button>
 	</a>
+
+	<a href="/samples">
+		<button> Samples </button>
+	</a>
 </div>
 
 <br />
@@ -47,6 +51,7 @@
 		display: block;
 		margin: 2rem auto;
 	}
+
 	.page-buttons {
 		text-align: center;
 

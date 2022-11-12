@@ -72,6 +72,8 @@
 
 <h2>Current</h2>
 
+<div class="logo-grid" />
+
 <br />
 
 <h2>Past</h2>

@@ -28,6 +28,10 @@
 	<a href="/portfolio">
 		<button> Portfolio </button>
 	</a>
+
+	<a href="/samples">
+		<button> Samples </button>
+	</a>
 </div>
 
 <br />

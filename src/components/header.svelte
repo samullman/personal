@@ -1,5 +1,7 @@
 <script>
 	import Drawer from 'svelte-drawer-component';
+	import { page } from '$app/stores';
+
 	let hidden = true;
 	export let showOnPx = 150;
 	let open = false;
@@ -98,10 +100,12 @@
 
 		<div class="contents">
 			<nav>
-				<a href="/">Home</a>
-				<a href="/about">About</a>
-				<a href="/services">Services</a>
-				<a href="/contact">Contact</a>
+				<a href="/" on:click={() => (open = false)}>{$page.url.host}</a>
+				<br />
+				<a href="/about" on:click={() => (open = false)}>About</a>
+				<a href="/portfolio" on:click={() => (open = false)}>Payments</a>
+				<a href="/portfolio" on:click={() => (open = false)}>Portfolio</a>
+				<a href="/samples" on:click={() => (open = false)}>Samples</a>
 			</nav>
 		</div>
 	</div>
