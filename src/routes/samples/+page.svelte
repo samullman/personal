@@ -1,6 +1,10 @@
 <h1>Samples</h1>
 
 <div class="page-buttons">
+	<a href="/samples/periodic-table">
+		<button> Periodic Table </button>
+	</a>
+
 	<a href="/samples/sacred-times">
 		<button> Sacred Times </button>
 	</a>
