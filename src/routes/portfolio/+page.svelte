@@ -1,10 +1,5 @@
 <script>
-	import Lazy from 'svelte-lazy';
-
-	const banner = {
-		src: '/books.jpeg',
-		title: 'Books'
-	};
+	import LazyImage from '../../components/lazy-image.svelte';
 
 	const projects = [
 		{
@@ -66,37 +61,32 @@
 
 <h1>Portfolio</h1>
 
-<Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
-	<img class="rounded breaker-img" src={banner.src} alt={banner.title} />
-</Lazy>
-
-<h2>Current</h2>
+<h2>Current:</h2>
 
 <div class="logo-grid" />
 
 <br />
 
-<h2>Past</h2>
+<h2>Past:</h2>
 
-<div class="logo-grid">
+<div class="vertical-flex">
 	{#each history as item}
-		<div>
-			<a href={item.link} target="_blank">
-				<img class="rounded" src={item.image} alt={item.title} />
-			</a>
-
+		<div class="portfolio-item">
 			<div class="info">
-				<h3>
+				<div>
+					<b>Title:</b>
 					{item.title}
-				</h3>
+				</div>
 
-				<div class="link">
+				<div>
+					<b>Website:</b>
 					<a href={item.link} target="_blank">
 						{item.link}
 					</a>
 				</div>
 
-				<div class="desc">
+				<div>
+					<b>Description:</b>
 					{item.description}
 				</div>
 
@@ -108,6 +98,10 @@
 					{/each}
 				</div>
 			</div>
+
+			<a href={item.link} target="_blank">
+				<LazyImage src={item.image} alt={item.title} />
+			</a>
 		</div>
 	{/each}
 </div>
@@ -115,42 +109,33 @@
 <br />
 
 <style lang="scss">
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
-	}
-
 	p {
 		text-align: center;
 		max-width: 40rem;
 		margin: 1rem auto;
 	}
 
-	.logo-grid {
+	.vertical-flex {
 		display: flex;
 		max-width: 800px;
 		margin: 0 auto;
 		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;
-		gap: 2.5rem;
+		gap: 3rem;
+
+		.portfolio-item {
+			border: 0.16rem dashed $dark;
+			border-radius: 0.6rem;
+			padding: 1rem;
+		}
 
 		.info {
-			margin-bottom: 2.5rem;
-
-			h3 {
-				margin-top: 0.5rem;
-				margin-bottom: 0.5rem;
-			}
-
-			.link {
-				margin-bottom: 0.75rem;
-			}
-			.desc {
-				margin-bottom: 0.75rem;
-			}
+			display: flex;
+			flex-direction: column;
+			gap: 0.4rem;
+			margin-bottom: 1.25rem;
+			font-size: 1.08rem;
 
 			.tags {
 				display: flex;
@@ -173,14 +158,8 @@
 			transition: all 0.2s ease;
 			object-fit: cover;
 			height: 25rem;
-			margin-bottom: 0.5rem;
+			border-radius: 0.25rem;
 		}
-	}
-
-	h2 {
-		font-size: 1.5rem;
-		text-align: center;
-		text-transform: uppercase;
 	}
 
 	.title {

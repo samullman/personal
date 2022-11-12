@@ -4,11 +4,11 @@
 	import { page } from '$app/stores';
 </script>
 
-<div class="title">
+<header>
 	<a href="/">
 		{$page.url.host}
 	</a>
-</div>
+</header>
 
 <main>
 	<div class="page">
@@ -16,24 +16,32 @@
 	</div>
 </main>
 
-<hr />
+<footer>
+	<hr />
 
-<div class="built-with">
-	Built with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>
-</div>
-<div>{$page.url.host}</div>
+	<div class="built-with">
+		Built with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a> 🤯
+	</div>
+	<div>
+		<a href="/" sveltekit:prefetch>
+			{$page.url.host}
+		</a>
+	</div>
+</footer>
 
 <Header />
 
 <style lang="scss">
-	.title {
+	header {
 		font-size: 1.2rem;
-		text-align: center;
+		max-width: 42rem;
+		margin: 0 auto;
+	}
 
-		a {
-			color: inherit;
-			text-decoration: none;
-		}
+	footer {
+		font-size: 1.2rem;
+		max-width: 50rem;
+		margin: 0 auto;
 	}
 
 	.built-with {
@@ -42,7 +50,7 @@
 
 	.page {
 		padding-top: 1rem;
-		max-width: 80rem;
+		max-width: 42rem;
 		width: 100%;
 		margin: 0 auto;
 	}

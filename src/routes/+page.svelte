@@ -1,8 +1,49 @@
 <script>
-	import { page } from '$app/stores';
-	import { each } from 'svelte/internal';
-
 	import Lazy from 'svelte-lazy';
+
+	import LazyImage from '../components/lazy-image.svelte';
+
+	const links = [
+		{
+			url: '/',
+			title: 'Home'
+		},
+
+		{
+			url: '/portfolio',
+			title: 'Portfolio'
+		},
+
+		{
+			url: '/samples',
+			title: 'Samples'
+		},
+
+		{
+			url: '/about',
+			title: 'About'
+		},
+
+		{
+			url: '/payments',
+			title: 'Payments'
+		},
+
+		{
+			url: '/resources',
+			title: 'Resources'
+		},
+
+		{
+			url: '/contact',
+			title: 'Contact'
+		},
+
+		{
+			url: '/book',
+			title: 'Book'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -10,55 +51,39 @@
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
-<h1>Startup & Enterprise Consulting</h1>
+<h1>Peace of mind.</h1>
 
-<Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
-	<img class="breaker-img rounded" src="/hero.jpeg" alt="Galaxy" />
-</Lazy>
+<h3>Sitemap:</h3>
 
-<div class="page-buttons">
-	<a href="/about">
-		<button> About </button>
-	</a>
+<ul>
+	{#each links as link}
+		<li>
+			<a href={link.url} title={link.title}>
+				{link.title}
+			</a>
+		</li>
+	{/each}
+</ul>
 
-	<a href="/payments">
-		<button> Payments </button>
-	</a>
-
-	<a href="/portfolio">
-		<button> Portfolio </button>
-	</a>
-
-	<a href="/samples">
-		<button> Samples </button>
-	</a>
+<div class="image-styles">
+	<LazyImage src="/hero.jpeg" alt="Galaxy" />
 </div>
 
 <br />
 
 <style lang="scss">
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
+	ul {
+		font-size: 1.12rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.15rem;
 	}
-
-	.page-buttons {
-		text-align: center;
-
-		button {
-			font-size: 1.2rem;
-			padding: 0.5rem 1rem;
-			margin: 0.25rem;
-		}
-	}
-
-	.breaker-img {
+	.image-styles {
 		position: relative;
 		max-height: 400px;
 		max-width: 800px;
-		margin: 2rem auto;
+		margin-top: 2rem;
+		margin-bottom: 1rem;
 		display: block;
 	}
 </style>
