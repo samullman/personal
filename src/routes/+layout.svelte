@@ -19,7 +19,7 @@
 <hr />
 
 <div class="built-with">
-	Built with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a> ✌️
+	Built with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a>
 </div>
 <div>{$page.url.host}</div>
 

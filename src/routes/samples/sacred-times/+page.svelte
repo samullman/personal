@@ -36,14 +36,17 @@
 
 <h1>Sacred Times</h1>
 
+<p>
+	Sacred Times is a fun coding exercise to programatically generate a color-coded list of times that
+	we sometimes notice on our digital devices.
+</p>
+
 <div class="sacred-times">
 	{#each hours as hour, h}
 		{#each minutes as minute, m}
 			{#if isPalidrome(hour + minute) || isDouble(hour + minute)}
-				<div class="wrapper">
-					<div class={'time color-' + hour + ' ' + 'index-' + m}>
-						{hour}:{minute}
-					</div>
+				<div class={'time color-' + hour + ' ' + 'index-' + m}>
+					{hour}:{minute}
 				</div>
 			{/if}
 		{/each}
@@ -75,6 +78,12 @@
 		margin: 1rem;
 	}
 
+	p {
+		text-align: center;
+		max-width: 32rem;
+		margin: 1rem auto;
+	}
+
 	.sacred-times {
 		display: flex;
 		gap: 0.5rem;
@@ -84,19 +93,11 @@
 		margin: 0 auto;
 		margin-top: 1.5rem;
 
-		.wrapper {
-			&:hover {
-				.time {
-					transform: rotateY(360deg);
-				}
-			}
-		}
-
 		.time {
 			border: 0.1rem solid $dark;
 			padding: 0.25rem 0.5rem;
 			border-radius: 0.25rem;
-			transition: all 0.2s ease, transform 0.5s linear;
+			transition: all 0.2s ease;
 			user-select: none;
 			cursor: pointer;
 			font-weight: 500;
@@ -126,9 +127,12 @@
 				}
 			}
 
-			// &:active {
-			// 	transform: scale(0.96);
-			// }
+			&:hover {
+				transform: scale(1.08);
+			}
+			&:active {
+				transform: scale(0.96);
+			}
 		}
 	}
 

@@ -53,7 +53,7 @@
 			link: 'https://munchery.com/',
 			image: '/history/munchery.png',
 			description:
-				'I ran a performance audit on the Munchery platform to diagnose an number of breaking issues as well as image optimizations.  I was able to decrease page load times by 30% as well as increase image resultion across the website.',
+				'I ran a performance audit on the Munchery platform to diagnose a number of breaking issues as well as image optimizations.  I was able to decrease page load times by 30% as well as increase image resoltion across the website.',
 			tags: ['React.js', 'JavaScript', 'SCSS', 'Performance Audit']
 		}
 	];

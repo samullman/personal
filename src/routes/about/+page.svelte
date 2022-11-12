@@ -37,7 +37,7 @@
 </div>
 
 <p class="title">
-	My name is Sam Ullman. I am a Fullstack JavaScript developer with an eye for performance and
+	I am a JavaScript developer specializing in fullstack web frameworks an eye for performance and
 	design. I have implemented a wide array of tooling ranging from database integrations, content
 	management systems, payment processing, and web app functionality.
 </p>
