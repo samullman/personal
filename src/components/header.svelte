@@ -119,10 +119,11 @@
 <style lang="scss">
 	.header {
 		position: fixed;
-		bottom: 1rem;
-		right: 1rem;
+		top: 0.75rem;
+		right: 0.75rem;
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
+
 		gap: 0.5rem;
 		padding: 0.4rem;
 		background: $light;
