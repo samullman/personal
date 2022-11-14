@@ -100,7 +100,7 @@
 				</div>
 			</div>
 
-			<a href={item.link} target="_blank">
+			<a class="cancel-background" href={item.link} target="_blank">
 				<LazyImage src={item.image} alt={item.title} />
 			</a>
 		</div>

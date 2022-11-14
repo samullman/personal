@@ -24,7 +24,7 @@
 <h1>About</h1>
 
 <p class="title">Health, frequency, and growth!</p>
-<p class="title">My name is Sam Ullman and I'm a creative living in Austin, TX.</p>
+<p class="title">My name is Sam Ullman and I'm a (Creative) Web Developer living in Austin, TX.</p>
 
 <br />
 

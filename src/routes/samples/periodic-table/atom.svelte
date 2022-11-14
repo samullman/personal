@@ -3,7 +3,7 @@
 	export let value = {};
 </script>
 
-<a href={'/samples/periodic-table/' + key}>
+<a class="cancel-background" href={'/samples/periodic-table/' + key}>
 	<div class={'atom ' + 'period-' + value.period}>
 		<div>
 			<div class="number">
