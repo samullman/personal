@@ -43,6 +43,8 @@
 </p>
 
 <br />
+<hr />
+<br />
 
 <div class="logo-grid">
 	{#each socials as item}
@@ -51,8 +53,6 @@
 		</a>
 	{/each}
 </div>
-
-<br />
 
 <style lang="scss">
 	p {
