@@ -1,12 +1,7 @@
 <script>
-	import Lazy from 'svelte-lazy';
+	import LazyImage from '../../components/lazy-image.svelte';
 
 	const socials = [
-		{
-			title: 'Calendly',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/calendly.png'
-		},
 		{
 			title: 'LinkedIn',
 			target: 'https://www.linkedin.com/in/samullman/',
@@ -28,33 +23,24 @@
 
 <h1>About</h1>
 
-<Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
-	<img class="rounded breaker-img" src="/forrest.jpeg" alt="Forrest" />
-</Lazy>
+<p class="title">Health, frequency, and growth!</p>
+<p class="title">My name is Sam Ullman and I'm a creative living in Austin, TX.</p>
 
-<div class="profile-img">
-	<img src="/crossed-arms.png" alt="Sam Ullman" />
-</div>
+<LazyImage src="/forrest.jpeg" alt="Forrest" />
 
 <p class="title">
-	I am a JavaScript developer specializing in fullstack web frameworks an eye for performance and
-	design. I have implemented a wide array of tooling ranging from database integrations, content
-	management systems, payment processing, and web app functionality.
+	I have been developing Full-stack JavaScript applications for 7+ years and am now working with
+	organizations to skyrocket their bottrom line.
 </p>
 
 <p class="title">
-	<a href="/portfolio">
-		<button> Portfolio </button>
-	</a>
+	In the past, I've worked for Fortune 500 clients, on remote teams, and for various creative
+	agencies.
 </p>
 
 <p class="title">
-	I have worked for Fortune 500 companies, entreprenuers, and in Web3 remote teams (Near, Solana,
-	and more) to build out custom UIs with the latest web technologies. One thing is for sure and that
-	is we will use the most robust web assets to secure your digital footprint.
+	<a href="/contact" title="Contact">Let's work together</a>.
 </p>
-
-<p class="title">Based in Austin, TX, USA.</p>
 
 <br />
 
@@ -68,32 +54,14 @@
 
 <br />
 
-<p class="title">Health, frequency, and the pursuit of knowledge!</p>
-
 <style lang="scss">
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
-	}
-
 	p {
-		text-align: center;
-		max-width: 40rem;
-		margin: 1rem auto;
-
-		button {
-			font-size: 1.2rem;
-			padding: 0.5rem 1rem;
-			margin: 0.25rem;
-		}
+		font-size: 1.2rem;
 	}
 
 	.logo-grid {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
 		gap: 2rem;
 
 		img {
@@ -119,10 +87,6 @@
 				opacity: 1;
 			}
 		}
-	}
-
-	.title {
-		font-size: 1.2rem;
 	}
 
 	.breaker-img {

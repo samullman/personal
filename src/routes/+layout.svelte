@@ -1,7 +1,17 @@
 <script>
 	import '../../src/app.scss';
 	import Header from '../components/header.svelte';
+	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
+	import pageViews from '../stores/page';
+	import { beforeUpdate } from 'svelte';
+
+	$pageViews;
+
+	beforeUpdate(() => {
+		$pageViews[$page.url.pathname] = true;
+		pageViews.set($pageViews);
+	});
 </script>
 
 <header>
@@ -23,7 +33,7 @@
 		Built with <a href="https://kit.svelte.dev/" target="_blank">SvelteKit</a> 🤯
 	</div>
 	<div>
-		<a href="/" sveltekit:prefetch>
+		<a href="/" data-sveltekit-prefetch>
 			{$page.url.host}
 		</a>
 	</div>
@@ -40,7 +50,7 @@
 
 	footer {
 		font-size: 1.2rem;
-		max-width: 50rem;
+		max-width: 42rem;
 		margin: 0 auto;
 	}
 

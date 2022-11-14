@@ -3,47 +3,7 @@
 
 	import LazyImage from '../components/lazy-image.svelte';
 
-	const links = [
-		{
-			url: '/',
-			title: 'Home'
-		},
-
-		{
-			url: '/portfolio',
-			title: 'Portfolio'
-		},
-
-		{
-			url: '/samples',
-			title: 'Samples'
-		},
-
-		{
-			url: '/about',
-			title: 'About'
-		},
-
-		{
-			url: '/payments',
-			title: 'Payments'
-		},
-
-		{
-			url: '/resources',
-			title: 'Resources'
-		},
-
-		{
-			url: '/contact',
-			title: 'Contact'
-		},
-
-		{
-			url: '/book',
-			title: 'Book'
-		}
-	];
+	import links from '../data/links.json';
 </script>
 
 <svelte:head>
@@ -76,7 +36,7 @@
 		font-size: 1.12rem;
 		display: flex;
 		flex-direction: column;
-		gap: 0.15rem;
+		gap: 0.3rem;
 	}
 	.image-styles {
 		position: relative;
@@ -85,5 +45,12 @@
 		margin-top: 2rem;
 		margin-bottom: 1rem;
 		display: block;
+	}
+
+	.icon {
+		width: 0.8rem;
+		position: relative;
+		top: 0.1rem;
+		left: 0.12rem;
 	}
 </style>

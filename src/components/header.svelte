@@ -29,6 +29,8 @@
 			hidden = true;
 		}
 	}
+
+	import links from '../data/links.json';
 </script>
 
 <svelte:window on:scroll={handleOnScroll} />
@@ -99,13 +101,16 @@
 		</button>
 
 		<div class="contents">
+			<h3>{$page.url.host}</h3>
+
 			<nav>
-				<a href="/" on:click={() => (open = false)}>{$page.url.host}</a>
+				{#each links as link}
+					<a href={link.url} title={link.title} on:click={() => (open = false)}>
+						{link.title}
+					</a>
+				{/each}
+
 				<br />
-				<a href="/about" on:click={() => (open = false)}>About</a>
-				<a href="/portfolio" on:click={() => (open = false)}>Payments</a>
-				<a href="/portfolio" on:click={() => (open = false)}>Portfolio</a>
-				<a href="/samples" on:click={() => (open = false)}>Samples</a>
 			</nav>
 		</div>
 	</div>
@@ -205,5 +210,6 @@
 	nav {
 		display: flex;
 		flex-direction: column;
+		gap: 0.2rem;
 	}
 </style>
