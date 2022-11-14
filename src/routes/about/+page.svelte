@@ -26,7 +26,11 @@
 <p class="title">Health, frequency, and growth!</p>
 <p class="title">My name is Sam Ullman and I'm a creative living in Austin, TX.</p>
 
+<br />
+
 <LazyImage src="/forrest.jpeg" alt="Forrest" />
+
+<br />
 
 <p class="title">
 	I have been developing Full-stack JavaScript applications for 7+ years and am now working with
@@ -63,8 +67,8 @@
 		gap: 2rem;
 
 		img {
-			@media screen and (max-width: 500px) {
-				max-width: 100px;
+			@media screen and (max-width: $breakpoint) {
+				max-width: 50px;
 			}
 
 			@media screen and (min-width: $breakpoint) {

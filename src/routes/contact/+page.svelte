@@ -124,19 +124,19 @@
 		max-width: 10rem;
 	}
 
-	input {
-		width: 100%;
-		max-width: 20rem;
-		padding: 0.2rem 0.5rem;
-		font-family: Space Mono;
-		font-size: 1.3rem;
-	}
-
+	input,
 	textarea {
 		width: 100%;
 		font-family: Space Mono;
-		padding: 0.2rem 0.5rem;
 		font-size: 1.3rem;
+		padding: 0.2rem 0.5rem;
+	}
+
+	input {
+		max-width: 20rem;
+	}
+
+	textarea {
 		max-width: 90%;
 	}
 

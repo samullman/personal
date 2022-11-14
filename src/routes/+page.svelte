@@ -14,6 +14,7 @@
 </div>
 
 <br />
+<br />
 
 <style lang="scss">
 	.image-styles {
