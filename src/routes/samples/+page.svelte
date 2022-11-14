@@ -1,23 +1,17 @@
 <h1>Samples</h1>
 
-<div class="page-buttons">
-	<a href="/samples/periodic-table">
-		<button> Periodic Table </button>
-	</a>
+<ul>
+	<li>
+		<a href="/samples/periodic-table"> Periodic Table </a>
+	</li>
 
-	<a href="/samples/sacred-times">
-		<button> Sacred Times </button>
-	</a>
-</div>
+	<li>
+		<a href="/samples/sacred-times"> Sacred Times </a>
+	</li>
+</ul>
+<div class="page-buttons" />
 
 <style lang="scss">
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
-	}
-
 	.page-buttons {
 		text-align: center;
 
@@ -26,5 +20,12 @@
 			padding: 0.5rem 1rem;
 			margin: 0.25rem;
 		}
+	}
+
+	ul {
+		font-size: 1.12rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.3rem;
 	}
 </style>

@@ -71,13 +71,6 @@
 <p class="title">Health, frequency, and the pursuit of knowledge!</p>
 
 <style lang="scss">
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
-	}
-
 	p {
 		text-align: center;
 		max-width: 40rem;

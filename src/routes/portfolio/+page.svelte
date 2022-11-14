@@ -61,13 +61,14 @@
 
 <h1>Portfolio</h1>
 
-<h2>Current:</h2>
+<br />
+<!-- <h2>Current:</h2>
 
 <div class="logo-grid" />
 
 <br />
 
-<h2>Past:</h2>
+<h2>Past:</h2> -->
 
 <div class="vertical-flex">
 	{#each history as item}

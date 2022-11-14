@@ -90,21 +90,6 @@
 		flex-direction: column;
 		gap: 0.75rem;
 		max-width: 40rem;
-		margin: 2rem auto;
-	}
-
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
-	}
-
-	h2 {
-		margin-top: 0;
-		font-size: 1.2rem;
-		text-align: center;
-		text-transform: uppercase;
 	}
 
 	.atom-grid {
@@ -112,6 +97,5 @@
 		flex-wrap: wrap;
 		gap: 2em;
 		margin-bottom: 2em;
-		justify-content: center;
 	}
 </style>

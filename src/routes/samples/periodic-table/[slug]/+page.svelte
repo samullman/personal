@@ -8,8 +8,10 @@
 	const value = atoms[key];
 </script>
 
+<h1>{value.name}</h1>
+
+<br />
 <div class="atom">
-	<h2>{value.name}</h2>
 	<Atom {key} {value} />
 	<br />
 
@@ -56,16 +58,8 @@
 <style lang="scss">
 	.atom {
 		display: flex;
-		justify-content: center;
 		flex-direction: column;
-		max-width: 32rem;
 		margin: 0 auto;
-		text-align: center;
-	}
-
-	h2 {
-		font-size: 2em;
-		margin-top: 0;
 	}
 
 	.element {
@@ -81,9 +75,7 @@
 	}
 
 	.shell {
-		margin: 0 auto;
 		margin-bottom: 1em;
-		text-align: center;
 	}
 
 	p {

@@ -71,26 +71,10 @@
 <style lang="scss">
 	@use 'sass:math';
 
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
-	}
-
-	p {
-		text-align: center;
-		max-width: 32rem;
-		margin: 1rem auto;
-	}
-
 	.sacred-times {
 		display: flex;
 		gap: 0.5rem;
 		flex-wrap: wrap;
-		justify-content: center;
-		max-width: 28rem;
-		margin: 0 auto;
 		margin-top: 1.5rem;
 
 		.time {
@@ -137,15 +121,10 @@
 	}
 
 	.return-btn {
-		text-align: center;
 		margin: 2rem 0rem;
 	}
 
 	.code-box {
-		text-align: center;
-		max-width: 40rem;
-		margin: 0 auto;
-
 		img {
 			border-radius: 0.5rem;
 		}
