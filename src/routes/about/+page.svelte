@@ -43,12 +43,10 @@
 </p>
 
 <br />
-<hr />
-<br />
 
 <div class="logo-grid">
 	{#each socials as item}
-		<a href={item.target} target="_blank">
+		<a class="cancel-background" href={item.target} target="_blank">
 			<img src={item.image} alt={item.title} />
 		</a>
 	{/each}
@@ -56,7 +54,7 @@
 
 <style lang="scss">
 	p {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 
 	.logo-grid {

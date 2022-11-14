@@ -24,6 +24,9 @@
 	"dependencies": {
 		"@fontsource/abel": "^4.5.6",
 		"@fontsource/acme": "^4.5.8",
+		"@fontsource/dm-mono": "^4.5.10",
+		"@fontsource/dm-sans": "^4.5.9",
+		"@fontsource/eczar": "^4.5.11",
 		"@macfja/svelte-persistent-store": "^2.2.1",
 		"qrious": "^4.0.2",
 		"svelte-drawer-component": "^1.2.2",

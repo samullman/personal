@@ -5,6 +5,7 @@
 	import { page } from '$app/stores';
 	import pageViews from '../stores/page';
 	import { beforeUpdate } from 'svelte';
+	import links from '../data/links.json';
 
 	$pageViews;
 
@@ -15,10 +16,25 @@
 </script>
 
 <header>
-	<a href="/">
-		{$page.url.host}
-	</a>
+	<strong>
+		<a href="/">
+			<!-- {$page.url.host} -->
+			Sam Ullman ↔ Web Developer
+		</a>
+	</strong>
 </header>
+
+<nav>
+	<ul>
+		{#each links as link}
+			<li>
+				<a href={link.url} title={link.title}>
+					{link.title}
+				</a>
+			</li>
+		{/each}
+	</ul>
+</nav>
 
 <main>
 	<div class="page">
@@ -42,14 +58,25 @@
 <Header />
 
 <style lang="scss">
-	header {
-		font-size: 1.2rem;
+	header,
+	nav {
+		ul {
+			display: flex;
+			flex-direction: row;
+			gap: 1.5rem;
+			padding-left: 0;
+			list-style: none;
+
+			@media screen and (max-width: $breakpoint) {
+				display: none;
+			}
+		}
+
 		max-width: 42rem;
 		margin: 0 auto;
 	}
 
 	footer {
-		font-size: 1.2rem;
 		max-width: 42rem;
 		margin: 0 auto;
 	}
@@ -59,7 +86,6 @@
 	}
 
 	.page {
-		padding-top: 1rem;
 		max-width: 42rem;
 		width: 100%;
 		margin: 0 auto;

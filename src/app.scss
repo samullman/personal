@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;800&family=Space+Mono:wght@400;700&family=Syne:wght@500;700;800&display=swap');
+
 button {
 	cursor: pointer;
 }
@@ -9,14 +11,34 @@ img {
 	object-fit: cover;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Space Mono';
+	font-weight: 900;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 3.3rem;
+	font-family: 'Syne';
+	font-weight: 900;
+}
+
 // base
 
-body {
-	background: white;
-	color: #0f0f0f;
-	transition: background 0.2s ease;
+button {
+	font-family: 'Space Mono';
+}
 
-	font-family: 'Abel', sans-serif;
+body {
+	background: $light;
+	color: $dark;
+	transition: background 0.2s ease;
+	font-family: 'Space Mono', monospace;
 	padding: 1rem;
 
 	@media screen and (min-width: $breakpoint) {
@@ -34,10 +56,30 @@ main {
 	flex-direction: column;
 }
 
+a.cancel-background {
+	&:hover {
+		background: none;
+	}
+}
+
+a {
+	text-decoration-thickness: 0.2rem;
+	text-decoration-color: #fbf6c9d9;
+	transition: all 0.4s ease;
+	background: $light;
+	display: inline-block;
+	// padding: 0 0.5rem;
+
+	&:hover {
+		text-decoration-color: #fbf6c9d9;
+		background: #fbf6c9d9;
+	}
+}
+
 // modifications
 
 .rounded {
-	border-radius: 0.5rem;
+	border-radius: 0.25rem;
 }
 
 // dark bode

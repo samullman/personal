@@ -32,6 +32,21 @@
   resolved "https://registry.yarnpkg.com/@fontsource/acme/-/acme-4.5.8.tgz#b9b2aa7df967ca10bb5084a3b5fa0be1f1e3b161"
   integrity sha512-IIw21RBERUWne0f4FpCPmc+eQ8zRZNc1UHyADSDoJ5/8lWw/lA09R8hUbqoRdJ2ZKIwDZjjL6RZ587axw0xThQ==
 
+"@fontsource/dm-mono@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/dm-mono/-/dm-mono-4.5.10.tgz#2d033549b4fe75ab8e26c5e74081f1ba5aa65519"
+  integrity sha512-cVd0L+tz1PrrNyClnpeJvRtVdvtB69L9PJ4sBm3t2ZCcbzKCa3MmW9duljKeRxTfQh3YTZpevnD14uWumRJYzA==
+
+"@fontsource/dm-sans@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/dm-sans/-/dm-sans-4.5.9.tgz#a48f9c815728ebb47e1c58e5176a9d4aa6cb25ea"
+  integrity sha512-qaFvSBJhoeley1A9myRUUuHbm9sz7ADyC2WodezBzdFSPs2VD/p5WPPwtpVE8b1SglQrOPAnxA7s3fH5zOtiMQ==
+
+"@fontsource/eczar@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/eczar/-/eczar-4.5.11.tgz#696b23e34ad436b516c37a493acdfdeabbb78a42"
+  integrity sha512-gF1GgIL7SjlNYZwfhY9AFvDEh+49OxbV2dqsxUdDfoFTTpuFP9baLZqmAQpA+9F6bjdOwK+d790Lm8YtXd1jzA==
+
 "@iarna/toml@^2.2.5":
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.5.tgz#b32366c89b43c6f8cefbdefac778b9c828e3ba8c"

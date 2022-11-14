@@ -101,13 +101,16 @@
 		</button>
 
 		<div class="contents">
-			<h3>{$page.url.host}</h3>
+			<!-- <h3>{$page.url.host}</h3> -->
+			<h3>Sam Ullman ↔ Web Developer</h3>
 
 			<nav>
 				{#each links as link}
-					<a href={link.url} title={link.title} on:click={() => (open = false)}>
-						{link.title}
-					</a>
+					<div>
+						<a href={link.url} title={link.title} on:click={() => (open = false)}>
+							{link.title}
+						</a>
+					</div>
 				{/each}
 
 				<br />
@@ -154,6 +157,10 @@
 	.menu-button {
 		display: block;
 
+		@media screen and (min-width: $breakpoint) {
+			display: none;
+		}
+
 		svg {
 			margin-bottom: -0.12rem;
 			width: 1.9rem;
@@ -189,7 +196,9 @@
 	}
 
 	.close-button {
-		padding-top: 0.38rem;
+		padding-top: 0.6rem;
+		padding-bottom: 0.3rem;
+
 		svg {
 			width: 1.5rem;
 			height: 1.5rem;
@@ -198,6 +207,8 @@
 
 	.drawer {
 		padding: 1rem;
+		background: $light;
+		height: 100%;
 
 		.contents {
 			padding-top: 1rem;
@@ -211,6 +222,23 @@
 	nav {
 		display: flex;
 		flex-direction: column;
-		gap: 0.2rem;
+		gap: 1rem;
+
+		a {
+			font-size: 1rem;
+		}
+	}
+
+	button {
+		font-size: 1.5rem;
+		padding: 0.5rem 1rem;
+		background: #677ea0;
+		border: none;
+		color: $light;
+		border-radius: 0.25rem;
+
+		&:hover {
+			background: $dark;
+		}
 	}
 </style>

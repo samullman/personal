@@ -49,6 +49,15 @@
 
 <h1>Contact</h1>
 
+<p>
+	I would love to hear from you sometime. Please use the form below or schedule with me directly via <a
+		href="https://www.calendly.com/samullman/meeting"
+		target="_blank">Calendly</a
+	>.
+</p>
+
+<br />
+
 <div class="grid">
 	<form
 		class="form"
@@ -91,29 +100,24 @@
 	<div class="status" />
 </div>
 
-<br />
-<hr />
-<br />
-
-<div class="logo-grid">
+<!-- <div class="logo-grid">
 	{#each socials as item}
-		<a href={item.target} target="_blank">
+		<a class="cancel-background" href={item.target} target="_blank">
 			<img src={item.image} alt={item.title} />
 		</a>
 	{/each}
-</div>
-
+</div> -->
 <style lang="scss">
 	label {
 		display: block;
-		font-size: 1rem;
+		font-size: 0.9rem;
 		margin-bottom: 0.25rem;
 	}
 
 	.form {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 1rem;
 	}
 
 	select {
@@ -122,12 +126,18 @@
 
 	input {
 		width: 100%;
-		max-width: 12rem;
+		max-width: 20rem;
+		padding: 0.2rem 0.5rem;
+		font-family: Space Mono;
+		font-size: 1.3rem;
 	}
 
 	textarea {
 		width: 100%;
-		max-width: 24rem;
+		font-family: Space Mono;
+		padding: 0.2rem 0.5rem;
+		font-size: 1.3rem;
+		max-width: 90%;
 	}
 
 	.logo-grid {
@@ -157,6 +167,21 @@
 				transform: scale(0.94);
 				opacity: 1;
 			}
+		}
+	}
+
+	button {
+		margin-top: 1rem;
+		font-size: 1.5rem;
+		padding: 0.5rem 1rem;
+		background: #677ea0;
+		border: none;
+		color: $light;
+		border-radius: 0.25rem;
+		transition: 0.2s ease;
+
+		&:hover {
+			background: $dark;
 		}
 	}
 </style>
