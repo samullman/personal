@@ -6,6 +6,40 @@
 			image: '/calendly.png'
 		}
 	];
+
+	function handleSubmit(e) {
+		e.preventDefault();
+		var status = document.querySelectorAll('.status')[0];
+		var data = new FormData(e.target);
+		fetch(e.target.action, {
+			method: 'POST',
+			body: data,
+			headers: {
+				Accept: 'application/json'
+			}
+		})
+			.then((response) => {
+				if (response.ok) {
+					debugger;
+					status.innerHTML = 'Thanks for your submission!';
+					document.querySelectorAll('form')[0].reset();
+				} else {
+					response.json().then((data) => {
+						if (Object.hasOwn(data, 'errors')) {
+							debugger;
+							status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
+						} else {
+							debugger;
+							status.innerHTML = 'Oops! There was a problem submitting your form';
+						}
+					});
+				}
+			})
+			.catch((error) => {
+				debugger;
+				status.innerHTML = 'Oops! There was a problem submitting your form';
+			});
+	}
 </script>
 
 <svelte:head>
@@ -16,10 +50,15 @@
 <h1>Contact</h1>
 
 <div class="grid">
-	<form class="form" name="contact" netlify>
+	<form
+		class="form"
+		action="https://formspree.io/f/mqknbjry"
+		method="POST"
+		on:submit={handleSubmit}
+	>
 		<div>
 			<label for="name">Name</label>
-			<input name="name" />
+			<input name="name" required />
 		</div>
 
 		<div>
@@ -46,6 +85,10 @@
 			<button type="submit"> Submit </button>
 		</div>
 	</form>
+
+	<br />
+
+	<div class="status" />
 </div>
 
 <br />
