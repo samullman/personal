@@ -36,11 +36,11 @@
 
 <p class="title">
 	I have been developing Full-stack Web Applications for 7+ years and am currently working with
-	individuals and organizations to grow with their enterprises with a solid foundation.
+	individuals and organizations to grow their enterprise with a solid foundation.
 </p>
 
 <p class="title">
-	In the past, I've worked with Fortune 500 clients, on distributed teams, and for various creative
+	In the past, I've worked with Fortune 500 clients, on distributed teams, and for creative
 	agencies.
 </p>
 

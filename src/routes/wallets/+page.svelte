@@ -6,21 +6,17 @@
 </script>
 
 <svelte:head>
-	<title>Payments</title>
+	<title>Wallets</title>
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
-<h1>Payments</h1>
-
-<Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
-	<img class="rounded breaker-img" src="/coins.jpeg" alt="Coins" />
-</Lazy>
+<h1>Wallets</h1>
 
 <br />
 
 <div class="logo-grid">
 	{#each wallet as item}
-		<a href={'/payments' + item.target}>
+		<a href={'/wallets/' + item.slug} class="cancel-background">
 			<img src={'/tokens' + item.logoSrc} alt={item.title} />
 		</a>
 	{/each}
@@ -29,28 +25,19 @@
 <br />
 
 <style lang="scss">
-	h1 {
-		text-align: center;
-		font-size: 1.5rem;
-		font-weight: 400;
-		margin: 1rem;
-	}
-
 	.logo-grid {
-		max-width: 800px;
 		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
-		gap: 2rem;
+		gap: 4rem;
 
 		img {
 			@media screen and (max-width: 500px) {
-				max-width: 100px;
+				max-width: 200px;
 			}
 
 			@media screen and (min-width: $breakpoint) {
-				max-width: 80px;
+				max-width: 100px;
 			}
 
 			cursor: pointer;
