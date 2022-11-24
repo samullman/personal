@@ -23,8 +23,10 @@
 
 <h1>About</h1>
 
-<p class="title">Health, frequency, and growth!</p>
-<p class="title">My name is Sam Ullman and I'm a (Creative) Web Developer living in Austin, TX.</p>
+<h3 class="title">
+	<b> Health, frequency, and growth! </b>
+</h3>
+<p class="title">My name is Sam Ullman and I'm a savant living in Austin, TX.</p>
 
 <br />
 
@@ -33,12 +35,12 @@
 <br />
 
 <p class="title">
-	I have been developing Full-stack JavaScript applications for 7+ years and am now working with
-	organizations to skyrocket their bottrom line.
+	I have been developing Full-stack Web Applications for 7+ years and am currently working with
+	individuals and organizations to grow with their enterprises with a solid foundation.
 </p>
 
 <p class="title">
-	In the past, I've worked for Fortune 500 clients, on remote teams, and for various creative
+	In the past, I've worked with Fortune 500 clients, on distributed teams, and for various creative
 	agencies.
 </p>
 

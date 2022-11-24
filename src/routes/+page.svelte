@@ -7,7 +7,7 @@
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
-<h1>Peace of Mind.</h1>
+<h1>Building new worlds.</h1>
 
 <div class="image-styles">
 	<LazyImage src="/hero.jpeg" alt="Galaxy" />

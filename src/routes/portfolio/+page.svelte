@@ -13,7 +13,7 @@
 			title: '1906',
 			link: 'https://1906newhighs.com/',
 			description:
-				'I worked with a design agency to build their site from the ground up. We cooredinated accross time zones to deliver to a client based in Denver, Colorado, USA.',
+				'I worked with a design agency to build their site from scratch. We used the Gatsby.js web framework on the frontend and connected it to a Shopify SDK/CMS on the backend.',
 			image: '/history/1906.png',
 			tags: ['Gatsby.js', 'JavaScript', 'SCSS', 'Styled Components', 'E-commerce']
 		},
@@ -61,33 +61,36 @@
 
 <h1>Portfolio</h1>
 
+<!-- <h2>Code Samples</h2>
+
+<ul>
+	<li>
+		<a href="/samples/periodic-table"> Periodic Table </a>
+	</li>
+
+	<li>
+		<a href="/samples/sacred-times"> Sacred Times </a>
+	</li>
+</ul>
+
 <br />
-<!-- <h2>Current:</h2>
-
-<div class="logo-grid" />
-
 <br />
 
-<h2>Past:</h2> -->
+<h2>Past Work</h2> -->
 
 <div class="vertical-flex">
 	{#each history as item}
 		<div class="portfolio-item">
 			<div class="info">
-				<div>
-					<b>Title:</b>
-					{item.title}
-				</div>
+				<h3>{item.title}</h3>
 
 				<div>
-					<b>Website:</b>
 					<a href={item.link} target="_blank">
 						{item.link}
 					</a>
 				</div>
 
 				<div>
-					<b>Description:</b>
 					{item.description}
 				</div>
 
@@ -126,9 +129,6 @@
 		gap: 3rem;
 
 		.portfolio-item {
-			border: 0.16rem dashed $dark;
-			border-radius: 0.6rem;
-			padding: 1rem;
 		}
 
 		.info {
@@ -138,15 +138,22 @@
 			margin-bottom: 1.25rem;
 			font-size: 1.08rem;
 
+			h3 {
+				margin: 0;
+			}
+
 			.tags {
+				margin-top: 0.3rem;
 				display: flex;
 				gap: 0.25rem;
 				flex-wrap: wrap;
 
 				.tag {
-					font-size: 0.8rem;
+					font-size: 0.75rem;
+					letter-spacing: 0.1rem;
 					padding: 0.25rem 0.5rem;
 					background: gray;
+					text-transform: uppercase;
 					color: white;
 					display: inline-block;
 					border-radius: 0.35rem;

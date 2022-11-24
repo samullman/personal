@@ -169,19 +169,4 @@
 			}
 		}
 	}
-
-	button {
-		margin-top: 1rem;
-		font-size: 1.5rem;
-		padding: 0.5rem 1rem;
-		background: #677ea0;
-		border: none;
-		color: $light;
-		border-radius: 0.25rem;
-		transition: 0.2s ease;
-
-		&:hover {
-			background: $dark;
-		}
-	}
 </style>
