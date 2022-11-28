@@ -1,24 +1,23 @@
 <script>
+	import resources from '../../data/resources.json';
 	import Lazy from 'svelte-lazy';
+	import jump from 'jump.js';
+	import 'animate.css';
 
-	const socials = [
-		{
-			title: 'Calendly',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/calendly.png'
-		},
-		{
-			title: 'LinkedIn',
-			target: 'https://www.linkedin.com/in/samullman/',
-			image: '/linkedin.png'
-		},
+	let jumping = false;
 
-		{
-			title: 'Github',
-			target: 'https://www.github.com/samullman/',
-			image: '/github.png'
-		}
-	];
+	function destinationReached(tag) {
+		document.querySelectorAll(`[data-name=${tag}]`)[0].classList += ' animate__headShake';
+
+		setTimeout(() => {
+			removeAnimation(tag);
+		}, 500);
+	}
+
+	function removeAnimation(tag) {
+		jumping = false;
+		document.querySelectorAll(`[data-name=${tag}]`)[0].classList.remove('animate__headShake');
+	}
 </script>
 
 <svelte:head>
@@ -28,110 +27,83 @@
 
 <h1>Resources</h1>
 
-<Lazy height={400} fadeOption={{ delay: 0, duration: 50 }}>
-	<img class="rounded breaker-img" src="/forrest.jpeg" alt="Forrest" />
-</Lazy>
+<h2>Let's get it started.</h2>
 
-<div class="profile-img">
-	<img src="/crossed-arms.png" alt="Sam Ullman" />
-</div>
+{#each resources as resource}
+	<div>
+		<b>
+			<h3>
+				{resource.title}
+			</h3>
 
-<p class="title">
-	I am a JavaScript developer specializing in fullstack web frameworks an eye for performance and
-	design. I have implemented a wide array of tooling ranging from database integrations, content
-	management systems, payment processing, and web app functionality.
-</p>
+			<ul>
+				{#each resource.items as item}
+					<li>
+						<div class="item animate__animated" data-name={item.title}>
+							<a id={item.alt} href={item.website} alt={item.alt} target="_blank">
+								{item.title}
+							</a>
 
-<p class="title">
-	<a href="/portfolio">
-		<button> Portfolio </button>
-	</a>
-</p>
+							<div class="tags">
+								{#if item.tags}
+									{#each item.tags as tag}
+										<button
+											class="tag"
+											on:click={() => {
+												if (jumping) {
+													return;
+												} else {
+													jumping = true;
+												}
 
-<p class="title">
-	I have worked for Fortune 500 companies, entreprenuers, and in Web3 remote teams (Near, Solana,
-	and more) to build out custom UIs with the latest web technologies. One thing is for sure and that
-	is we will use the most robust web assets to secure your digital footprint.
-</p>
+												jump(`[data-name=${tag}]`, {
+													duration: 450,
+													offset: -12,
 
-<p class="title">Based in Austin, TX, USA.</p>
-
-<br />
-
-<div class="logo-grid">
-	{#each socials as item}
-		<a href={item.target} target="_blank">
-			<img src={item.image} alt={item.title} />
-		</a>
-	{/each}
-</div>
-
-<br />
-
-<p class="title">Health, frequency, and the pursuit of knowledge!</p>
+													callback: () => {
+														destinationReached(tag);
+													}
+												});
+											}}
+										>
+											{tag}
+										</button>
+									{/each}
+								{/if}
+							</div>
+						</div>
+					</li>
+				{/each}
+			</ul>
+		</b>
+	</div>
+{/each}
 
 <style lang="scss">
-	p {
-		text-align: center;
-		max-width: 40rem;
-		margin: 1rem auto;
-
-		button {
-			font-size: 1.2rem;
-			padding: 0.5rem 1rem;
-			margin: 0.25rem;
-		}
-	}
-
-	.logo-grid {
-		display: flex;
+	.item {
+		display: inline-flex;
+		gap: 1rem;
 		flex-wrap: wrap;
-		justify-content: center;
-		gap: 2rem;
-
-		img {
-			@media screen and (max-width: 500px) {
-				max-width: 100px;
-			}
-
-			@media screen and (min-width: $breakpoint) {
-				max-width: 80px;
-			}
-
-			cursor: pointer;
-			transition: all 0.2s ease;
-			object-fit: contain;
-
-			&:hover {
-				transform: scale(1.04);
-				opacity: 0.9;
-			}
-
-			&:active {
-				transform: scale(0.94);
-				opacity: 1;
-			}
-		}
+		display: flex;
+		align-items: baseline;
 	}
 
-	.title {
-		font-size: 1.2rem;
-	}
+	.tags {
+		margin-top: 0.3rem;
+		display: inline-flex;
+		gap: 0.35rem;
+		flex-wrap: wrap;
 
-	.breaker-img {
-		max-height: 400px;
-		max-width: 800px;
-		margin: 2rem auto;
-		display: block;
-	}
-
-	.profile-img {
-		text-align: center;
-
-		img {
-			width: 10rem;
-			height: 10rem;
-			border-radius: 50%;
+		.tag {
+			font-size: 0.75rem !important;
+			letter-spacing: 0.1rem;
+			padding: 0.25rem 0.55rem;
+			text-transform: uppercase;
+			color: white;
+			display: inline-block;
+			border-radius: 0.35rem;
+			position: relative;
+			bottom: 0.1rem;
 		}
 	}
 </style>

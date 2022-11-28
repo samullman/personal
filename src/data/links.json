@@ -15,16 +15,6 @@
 	},
 
 	{
-		"url": "/resources",
-		"title": "Resources"
-	},
-
-	{
-		"url": "/wallets",
-		"title": "Wallets"
-	},
-
-	{
 		"url": "/contact",
 		"title": "Contact"
 	}

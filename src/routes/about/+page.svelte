@@ -26,7 +26,16 @@
 <h3 class="title">
 	<b> Health, frequency, and growth! </b>
 </h3>
-<p class="title">My name is Sam Ullman and I'm a savant living in Austin, TX.</p>
+<p class="title">
+	My name is Sam Ullman and I'm a autodidact living in <a
+		href="https://goo.gl/maps/pPS75NfQHdm7QTcz6"
+		target="_blank">Austin, TX</a
+	>. Originally from
+	<a href="https://goo.gl/maps/ZgB2YxeobpSsr1Qs9" target="_blank">Portland, OR</a>, I went to school
+	in Southern California at
+	<a href="https://www.cmc.edu/" target="_blank">Claremont McKenna College</a> where I got a B.A. in
+	Science & Management (Biotechnology).
+</p>
 
 <br />
 
@@ -35,13 +44,13 @@
 <br />
 
 <p class="title">
-	I have been developing Full-stack Web Applications for 7+ years and am currently working with
-	individuals and organizations to grow their enterprise with a solid foundation.
+	I have since been developing <a href="/portfolio" title="Portfolio">Full-stack Web Applications</a
+	> for 8 years and am currently working with individuals and organizations to grow out their bottom
+	line.
 </p>
 
 <p class="title">
-	In the past, I've worked with Fortune 500 clients, on distributed teams, and for creative
-	agencies.
+	In the past, I've worked with Fortune 500 clients, for distributed teams and creative agencies.
 </p>
 
 <p class="title">

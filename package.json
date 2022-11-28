@@ -1,5 +1,5 @@
 {
-	"name": "massive",
+	"name": "samullman.com",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -28,6 +28,8 @@
 		"@fontsource/dm-sans": "^4.5.9",
 		"@fontsource/eczar": "^4.5.11",
 		"@macfja/svelte-persistent-store": "^2.2.1",
+		"animate.css": "^4.1.1",
+		"jump.js": "^1.0.2",
 		"qrious": "^4.0.2",
 		"svelte-drawer-component": "^1.2.2",
 		"svelte-lazy": "^1.1.0",

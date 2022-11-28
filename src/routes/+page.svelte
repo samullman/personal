@@ -9,27 +9,18 @@
 
 <h1>Building new worlds.</h1>
 
-<div class="image-styles">
-	<LazyImage src="/hero.jpeg" alt="Galaxy" />
-</div>
+<p>Handcrafted web applications and services!!!</p>
+
+<br />
+
+<LazyImage src="/hero.jpeg" alt="Galaxy" />
+
+<br />
+
+<p>Helping you grow with systems you've already picked and ones you have not heard of yet.</p>
 
 <br />
 <br />
 
 <style lang="scss">
-	.image-styles {
-		position: relative;
-		max-height: 400px;
-		max-width: 800px;
-		margin-top: 2rem;
-		margin-bottom: 1rem;
-		display: block;
-	}
-
-	.icon {
-		width: 0.8rem;
-		position: relative;
-		top: 0.1rem;
-		left: 0.12rem;
-	}
 </style>
