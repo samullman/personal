@@ -3,7 +3,7 @@
 	import Drawer from './drawer.svelte';
 </script>
 
-<header>
+<header class="max-width std-spacing">
 	<div>
 		<strong>
 			<a href="/"> Sam Ullman ↔ Web Developer </a>
@@ -27,7 +27,9 @@
 <Drawer />
 
 <style lang="scss">
-	header,
+	header {
+		padding-bottom: 0;
+	}
 	nav {
 		ul {
 			display: flex;
@@ -41,7 +43,5 @@
 			}
 		}
 
-		max-width: 42rem;
-		margin: 0 auto;
 	}
 </style>

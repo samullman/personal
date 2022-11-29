@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<footer>
+<footer class="max-width std-spacing">
 	<div>
 		<a href="/" data-sveltekit-prefetch>
 			{$page.url.host}
@@ -16,8 +16,6 @@
 
 <style lang="scss">
 	footer {
-		max-width: 42rem;
-		margin: 0 auto;
 		margin-top: 4rem;
 		margin-bottom: 1rem;
 		display: flex;

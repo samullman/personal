@@ -1,10 +1,8 @@
-/* Variables and mixins declared here will be available in all other SCSS files */
+// colors
 
-$breakpoint: 30rem;
 $dark: #262323;
 $light: #f5f3f3;
 $light: #e8ecf2;
-
 $red: #e23d3d;
 $dark-red: #961212;
 $dark-red-2: #961616;
@@ -19,3 +17,10 @@ $purple: #8a31e2;
 $orange: #f97e36;
 $pink: #f9367e;
 $pink-2: #ef34bd;
+
+// layout
+
+$breakpoint: 30rem;
+$max-width: 38rem;
+
+// fonts

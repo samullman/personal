@@ -37,7 +37,6 @@ h6 {
 
 h1 {
 	font-size: 3rem;
-
 	margin-bottom: 2rem;
 	font-family: 'Syne';
 	font-weight: 900;
@@ -101,13 +100,23 @@ a {
 	}
 }
 
+// layout
+
+.max-width {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+.std-spacing {
+	padding: 0.75rem;
+
+	@media screen and (min-width: $breakpoint) {
+		padding: 1rem;
+	}
+}
+
 // modifications
 
 .rounded {
 	border-radius: 0.25rem;
-}
-
-// dark bode
-
-.body.dark-mode {
 }

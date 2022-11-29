@@ -1,5 +1,7 @@
 # create-svelte
 
+<img src="https://img.shields.io/github/issues/samullman/personal?style=social" />
+
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
 ## Creating a project
@@ -36,3 +38,20 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## contributors
+
+<table>
+  <tr>
+    <td align="center" style="border:none;">
+        <a href="https://twitter.com/samullman">
+            <img src="https://avatars3.githubusercontent.com/u/10147333?v=4" width="100px;" alt=""/>
+            <br />
+            <sub>
+                <b>Sam Ullman</b>
+            </sub>
+        </a>
+        <br />
+    </td>
+  </tr>
+</table>
