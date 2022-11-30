@@ -1,5 +1,5 @@
 <script>
-	import links from '../data/links.json';
+	import links from "$lib/data/links.json";
 	import Drawer from './drawer.svelte';
 </script>
 
