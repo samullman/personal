@@ -15,7 +15,7 @@
 			description:
 				'I worked with a design agency to build their site from scratch. We used the Gatsby.js web framework on the frontend and connected it to a Shopify SDK/CMS on the backend.',
 			image: '/history/1906.png',
-			tags: ['Gatsby.js', 'JavaScript', 'SCSS', 'Styled Components', 'E-commerce']
+			tags: ['Gatsby.js', 'JavaScript', 'SCSS', 'Styled Components']
 		},
 
 		// {
@@ -31,7 +31,7 @@
 
 			description:
 				'I built multiple marketing websites for Code Nation through a design agency located in Portland, OR, USA. We built a scrollable interface translatable into multiple languages. ',
-			tags: ['Next.js', 'Chakra UI', 'JavaScript', 'Chart.js', 'SCSS', 'Scollspy']
+			tags: ['Next.js', 'Chakra UI', 'JavaScript', 'Chart.js', 'SCSS']
 		},
 
 		{
@@ -40,7 +40,7 @@
 			image: '/history/marinade.png',
 			description:
 				'After competing in the Solana hackathon I was invited to participate in full stack development for a winning project. With the team we built out the landing pages and began instantiating the internals of the Marinade platform. ',
-			tags: ['Next.js', 'Chakra UI', 'JavaScript', 'SCSS', 'APIs', 'SDKs']
+			tags: ['Next.js', 'Chakra UI', 'React-Query']
 		},
 
 		{
@@ -90,9 +90,9 @@
 					</a>
 				</div>
 
-				<div>
+				<!-- <div>
 					{item.description}
-				</div>
+				</div> -->
 
 				<div class="tags">
 					{#each item.tags as tag}
@@ -135,7 +135,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 0.4rem;
-			margin-bottom: 1.25rem;
+			margin-bottom: 0.8rem;
 			font-size: 1.08rem;
 
 			h3 {
@@ -152,7 +152,7 @@
 					font-size: 0.75rem;
 					letter-spacing: 0.1rem;
 					padding: 0.25rem 0.5rem;
-					background: gray;
+					background: rgb(50, 48, 48);
 					text-transform: uppercase;
 					color: white;
 					display: inline-block;
@@ -179,5 +179,8 @@
 		max-width: 800px;
 		margin: 2rem auto;
 		display: block;
+	}
+	a {
+		color: inherit;
 	}
 </style>

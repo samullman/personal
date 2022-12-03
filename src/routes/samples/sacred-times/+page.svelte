@@ -1,55 +1,84 @@
-<script>
-	const hours = [];
-	const minutes = [];
+<script lang="ts">
+	let times: {hour: number, minute: number}[] = [];
+	let hour = 1;
 
-	let counter = 0;
-	while (counter < 60) {
-		// populate minutes array
-		if (counter == 0) {
-			minutes.push('00');
-		} else if (counter < 10) {
-			minutes.push('0' + counter.toString());
-		} else {
-			minutes.push(counter.toString());
-		}
-
-		// populate hours array
-		if (counter < 13 && counter > 0) {
-			hours.push(counter.toString());
-		}
-
-		counter += 1;
+	// iterate hours
+	while (hour <= 12) {
+		checkTime(hour);
+		hour += 1;
 	}
 
-	function reverse(str) {
+	function checkTime(hour: number) {
+		let minute = 0;
+
+		// iterate minutes
+		while (minute <= 60) {
+			let str = hour.toString() + minute.toString();
+
+			if (isSpecial(hour, minute) || isPalidrome(str) || isDouble(str)) {
+				times.push({
+					hour,
+					minute
+				});
+			}
+
+			minute += 1;
+		}
+	}
+
+	function reverse(str: string) {
 		return str.split('').reverse().join('');
 	}
 
-	function isPalidrome(str) {
+	function isPalidrome(str: string) {
 		return str === reverse(str);
 	}
 
-	function isDouble(str) {
+	function isDouble(str: string) {
 		return str.slice(0, 2) == str.slice(2, 4);
+	}
+
+	function isSpecial(hour: number, minute: number) {
+		if (hour == 1 && minute == 23) {
+			return true;
+		} else if (hour == 12 && minute == 34) {
+			return true;
+		} else if (hour == 2 && minute == 34) {
+			return true;
+		} else if (hour == 3 && minute == 45) {
+			return true;
+		} else if (hour == 4 && minute == 56) {
+			return true;
+		} else if (hour == 3 && minute == 21) {
+			return true;
+		} else if (hour == 4 && minute == 32) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	// for adding 0 to minute values less than 10
+	function parseMinute(minute: number) {
+		if (minute < 10) {
+			return '0' + minute;
+		} else {
+			return minute;
+		}
 	}
 </script>
 
 <h1>Sacred Times</h1>
 
 <p>
-	Sacred Times is a fun coding exercise to programatically generate a color-coded list of times that
-	we sometimes notice on our digital devices.
+	Programatically generated, color-coded list of digital times that mean something?
 </p>
 
 <div class="sacred-times">
-	{#each hours as hour, h}
-		{#each minutes as minute, m}
-			{#if isPalidrome(hour + minute) || isDouble(hour + minute)}
-				<div class={'time color-' + hour + ' ' + 'index-' + m}>
-					{hour}:{minute}
-				</div>
-			{/if}
-		{/each}
+	{#each times as { hour, minute }}
+		<div class={'time color-' + hour + ' ' + 'index-' + minute}>
+			{hour}:{parseMinute(minute)}
+		</div>
 	{/each}
 </div>
 

@@ -23,39 +23,13 @@
 
 <h1>About</h1>
 
-<h3 class="title">
-	<b> Health, frequency, and growth! </b>
-</h3>
-<p class="title">
-	My name is Sam Ullman and I'm a autodidact living in <a
-		href="https://goo.gl/maps/pPS75NfQHdm7QTcz6"
-		target="_blank">Austin, TX</a
-	>. Originally from
-	<a href="https://goo.gl/maps/ZgB2YxeobpSsr1Qs9" target="_blank">Portland, OR</a>, I went to school
-	in Southern California at
-	<a href="https://www.cmc.edu/" target="_blank">Claremont McKenna College</a> where I got a B.A. in
-	Science & Management (Biotechnology).
-</p>
+<p class="title">My name is Sam Ullman.</p>
+
+<p class="title">I started programming in 2015 at App Academy bootcamp in San Francisco, CA.</p>
+
+<p class="title">Currently, I'm enjoying.</p>
 
 <br />
-
-<LazyImage src="/forrest.jpeg" alt="Forrest" />
-
-<br />
-
-<p class="title">
-	I have since been developing <a href="/portfolio" title="Portfolio">Full-stack Web Applications</a
-	> for 8 years and am currently working with individuals and organizations to grow out their bottom
-	line.
-</p>
-
-<p class="title">
-	In the past, I've worked with Fortune 500 clients, for distributed teams and creative agencies.
-</p>
-
-<p class="title">
-	<a href="/contact" title="Contact">Let's work together</a>.
-</p>
 
 <br />
 

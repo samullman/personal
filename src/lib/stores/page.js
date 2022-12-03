@@ -1,16 +1,16 @@
-import { persist, createLocalStorage } from "@macfja/svelte-persistent-store"
+import { persist, createLocalStorage } from '@macfja/svelte-persistent-store';
 import { writable } from 'svelte/store';
 
-import links from "$lib/data/links.json";
+import links from '$lib/data/links.json';
 
 var result = links.reduce(function (map, obj) {
 	map[obj.url] = false;
-	return map
+	return map;
 }, {});
 
 console.log(result);
 
-const pageViews = persist(writable(result), createLocalStorage(), "pageViews")
+const pageViews = persist(writable(result), createLocalStorage(), 'pageViews');
 
 export default pageViews;
 
@@ -47,4 +47,3 @@ export default pageViews;
 // 		decrement: () => update(n => n - 1),
 // 	};
 // }
-

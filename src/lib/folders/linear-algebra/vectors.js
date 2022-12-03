@@ -10,15 +10,15 @@ function matrixMultiply(matrix, vector) {
 	return result;
 }
 
-function transform (arr, arr2) {
+function transform(arr, arr2) {
 	var result = [];
 	for (var i = 0; i < arr.length; i++) {
 		result.push(dot(arr, arr2));
 	}
 	return result;
-} 
+}
 
-function checkLinearTransform (scalar, arr) {
+function checkLinearTransform(scalar, arr) {
 	scale(scalar, arr) == addTo(scalar, arr);
 }
 
@@ -30,7 +30,7 @@ function add(arr, arr2) {
 	return result;
 }
 
-function addTo (scalar, arr) {
+function addTo(scalar, arr) {
 	var result = [];
 	for (var i = 0; i < arr.length; i++) {
 		result.push(arr[i] + scalar);
@@ -58,15 +58,14 @@ function dot(arr, arr2) {
 	return sum;
 }
 
-function rotate (arr, angle) {
+function rotate(arr, angle) {
 	var result = [];
 	for (var i = 0; i < arr.length; i++) {
-		let num = arr[i] * Math.cos(angle) - arr[(i + 1) % arr.length] * Math.sin(angle)
+		let num = arr[i] * Math.cos(angle) - arr[(i + 1) % arr.length] * Math.sin(angle);
 		result.push(parseInt(num.toFixed(5)));
 	}
 	return result;
 }
-
 
 function length(arr) {
 	var sum = 0;
@@ -77,7 +76,7 @@ function length(arr) {
 }
 
 function length2(arr) {
-	return Math.sqrt(dot(arr, arr));;
+	return Math.sqrt(dot(arr, arr));
 }
 
 function scale(scalar, arr) {
@@ -100,7 +99,6 @@ function checkOrthogonal(arr, arr2) {
 	return dot(arr, arr2) == 0;
 }
 
-
 // console.log(dot([1, 2, 3], [4, 5, 6]));
 // console.log(length([1, 2, 3]));
 // console.log(length2([1, 2, 3]));
@@ -114,4 +112,4 @@ function checkOrthogonal(arr, arr2) {
 // console.log(rotate([0, 0, 1], Math.PI));
 
 // console.log( matrixMultiply([[-1, -3, -2], [0, 1, -1], [2, -1, 2]], [1, 0, 0]), "mult");
-console.log(  matrixMultiply(  [ scale(-2, [2, 1, -2]), scale(-2, [-1, 0, 3]) ],  [0, 1] ), "mult");
+console.log(matrixMultiply([scale(-2, [2, 1, -2]), scale(-2, [-1, 0, 3])], [0, 1]), 'mult');

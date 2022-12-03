@@ -1,28 +1,28 @@
 class Population {
-	constructor () {
+	constructor() {
 		this.persons = {};
 	}
 
-	addPerson (person) {
+	addPerson(person) {
 		this.persons[person.id] = person;
 	}
 }
 
 class FinancialSystem {
-	constructor () {
+	constructor() {
 		this.banks = {};
 	}
 
-	addBank (bank) {
+	addBank(bank) {
 		this.banks[banks.id] = bank;
 	}
 
-	removeBank (bank) {
+	removeBank(bank) {
 		delete this.banks[bank.id];
 	}
 }
 
 module.exports = {
 	Population,
-	FinancialSystem,
+	FinancialSystem
 };

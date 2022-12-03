@@ -1,5 +1,5 @@
 <script>
-	import links from "$lib/data/links.json";
+	import links from '$lib/data/links.json';
 	import Drawer from './drawer.svelte';
 </script>
 
@@ -29,6 +29,10 @@
 <style lang="scss">
 	header {
 		padding-bottom: 0;
+
+		a {
+			color: inherit !important;
+		}
 	}
 	nav {
 		ul {
@@ -42,6 +46,5 @@
 				display: none;
 			}
 		}
-
 	}
 </style>

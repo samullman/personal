@@ -1,38 +1,36 @@
-
-
 class Person {
-	constructor ( name ) {
+	constructor(name) {
 		this.id = makeid(10);
 		this.name = name;
 		this.balance = 0;
 		this.banks = {};
 	}
 
-	earn (amount) {
+	earn(amount) {
 		this.balance += amount;
 	}
 
-	spend (amount) {
+	spend(amount) {
 		this.balance -= amount;
 	}
 
-	signUpForBank ({ id, info }) {
+	signUpForBank({ id, info }) {
 		this.banks[id] = {
-			balance: 0, 
-			info, 
+			balance: 0,
+			info
 		};
 	}
 
-	leaveBank ( id ) {
+	leaveBank(id) {
 		delete this.banks[id];
 	}
 
-	deposit (id, amount) {
+	deposit(id, amount) {
 		this.balance -= amount;
 		this.banks[id].balance += amount;
 	}
 
-	withdraw (id, amount) {
+	withdraw(id, amount) {
 		this.balance += amount;
 		this.banks[id].balance -= amount;
 	}
