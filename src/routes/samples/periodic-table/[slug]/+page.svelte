@@ -62,17 +62,6 @@
 		margin: 0 auto;
 	}
 
-	.element {
-		margin-bottom: 2em;
-	}
-
-	.number {
-		font-size: 2em;
-	}
-	.title {
-		display: flex;
-		justify-content: space-between;
-	}
 
 	.shell {
 		margin-bottom: 1em;
@@ -80,11 +69,6 @@
 
 	p {
 		margin-top: 0;
-	}
-
-	.stats {
-		display: flex;
-		gap: 0.5em;
 	}
 
 	.valence {
@@ -106,7 +90,4 @@
 		border-radius: 0.5em;
 	}
 
-	.crystal-structure {
-		width: 6em;
-	}
 </style>

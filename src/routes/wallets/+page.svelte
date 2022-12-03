@@ -56,10 +56,4 @@
 		}
 	}
 
-	.breaker-img {
-		max-height: 400px;
-		max-width: 800px;
-		margin: 2rem auto;
-		display: block;
-	}
 </style>

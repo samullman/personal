@@ -43,7 +43,7 @@
 </script>
 
 <svelte:head>
-	<title>Contact | Massive</title>
+	<title>Contact</title>
 	<meta name="description" content="Turning energy into assets." />
 </svelte:head>
 
