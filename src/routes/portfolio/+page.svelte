@@ -8,6 +8,7 @@
 		}
 	];
 
+
 	const history = [
 		{
 			title: '1906',
@@ -17,12 +18,6 @@
 			image: '/history/1906.png',
 			tags: ['Gatsby.js', 'JavaScript', 'SCSS', 'Styled Components']
 		},
-
-		// {
-		// 	title: 'Applied Materials',
-		// 	link: 'https://www.appliedmaterials.com/interactive-proxy/',
-		// 	image: '/history/applied.png'
-		// },
 
 		{
 			title: 'Code Nation',
@@ -61,23 +56,6 @@
 
 <h1>Portfolio</h1>
 
-<!-- <h2>Code Samples</h2>
-
-<ul>
-	<li>
-		<a href="/samples/periodic-table"> Periodic Table </a>
-	</li>
-
-	<li>
-		<a href="/samples/sacred-times"> Sacred Times </a>
-	</li>
-</ul>
-
-<br />
-<br />
-
-<h2>Past Work</h2> -->
-
 <div class="vertical-flex">
 	{#each history as item}
 		<div class="portfolio-item">
@@ -113,12 +91,6 @@
 <br />
 
 <style lang="scss">
-	p {
-		text-align: center;
-		max-width: 40rem;
-		margin: 1rem auto;
-	}
-
 	.vertical-flex {
 		display: flex;
 		max-width: 800px;
@@ -127,9 +99,6 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 3rem;
-
-		.portfolio-item {
-		}
 
 		.info {
 			display: flex;
@@ -161,26 +130,5 @@
 				}
 			}
 		}
-
-		img {
-			transition: all 0.2s ease;
-			object-fit: cover;
-			height: 25rem;
-			border-radius: 0.25rem;
-		}
-	}
-
-	.title {
-		font-size: 1.2rem;
-	}
-
-	.breaker-img {
-		max-height: 400px;
-		max-width: 800px;
-		margin: 2rem auto;
-		display: block;
-	}
-	a {
-		color: inherit;
 	}
 </style>
