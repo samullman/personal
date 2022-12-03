@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import Lazy from 'svelte-lazy';
-	export let src;
-	export let alt;
-	export let height = 400;
+	export let src: string;
+	export let alt: string;
+	export let height: number = 400;
 </script>
 
 <Lazy {height} fadeOption={{ delay: 0, duration: 250 }}>

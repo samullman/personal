@@ -1,5 +1,5 @@
 <script lang="ts">
-	let times: {hour: number, minute: number}[] = [];
+	let times: { hour: number; minute: number }[] = [];
 	let hour = 1;
 
 	// iterate hours
@@ -70,9 +70,7 @@
 
 <h1>Sacred Times</h1>
 
-<p>
-	Programatically generated, color-coded list of digital times that mean something?
-</p>
+<p>Programatically generated, color-coded list of digital times that mean something?</p>
 
 <div class="sacred-times">
 	{#each times as { hour, minute }}

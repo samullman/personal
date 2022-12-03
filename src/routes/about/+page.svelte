@@ -23,11 +23,11 @@
 
 <h1>About</h1>
 
-<p class="title">My name is Sam Ullman.</p>
+<p>My name is Sam Ullman.</p>
 
-<p class="title">I started programming in 2015 at App Academy bootcamp in San Francisco, CA.</p>
+<p>I started programming in 2015 at App Academy bootcamp in San Francisco, CA.</p>
 
-<p class="title">Currently, I'm enjoying.</p>
+<p>Currently, I'm enjoying.</p>
 
 <br />
 
@@ -36,7 +36,7 @@
 <div class="logo-grid">
 	{#each socials as item}
 		<a class="cancel-background" href={item.target} target="_blank">
-			<img src={item.image} alt={item.title} />
+			<img src={item.image} alt={item.title} preload/>
 		</a>
 	{/each}
 </div>
@@ -73,23 +73,6 @@
 				transform: scale(0.94);
 				opacity: 1;
 			}
-		}
-	}
-
-	.breaker-img {
-		max-height: 400px;
-		max-width: 800px;
-		margin: 2rem auto;
-		display: block;
-	}
-
-	.profile-img {
-		text-align: center;
-
-		img {
-			width: 10rem;
-			height: 10rem;
-			border-radius: 50%;
 		}
 	}
 </style>

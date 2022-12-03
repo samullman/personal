@@ -1,11 +1,10 @@
 <script lang="ts">
-
 	interface eventType {
-		target: HTMLFormElement, 
+		target: HTMLFormElement;
 	}
 
 	interface errorType {
-		message: object, 
+		message: object;
 	}
 
 	function handleSubmit(e: eventType) {
