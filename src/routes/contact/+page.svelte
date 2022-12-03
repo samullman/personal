@@ -1,13 +1,14 @@
-<script>
-	const socials = [
-		{
-			title: 'Calendly',
-			target: 'https://www.calendly.com/samullman/',
-			image: '/calendly.png'
-		}
-	];
+<script lang="ts">
 
-	function handleSubmit(e) {
+	interface eventType {
+		target: HTMLFormElement, 
+	}
+
+	interface errorType {
+		message: object, 
+	}
+
+	function handleSubmit(e: eventType) {
 		e.preventDefault();
 		var status = document.querySelectorAll('.status')[0];
 		var data = new FormData(e.target);
@@ -27,7 +28,7 @@
 					response.json().then((data) => {
 						if (Object.hasOwn(data, 'errors')) {
 							debugger;
-							status.innerHTML = data['errors'].map((error) => error['message']).join(', ');
+							status.innerHTML = data['errors'].map((error: object) => error['message']).join(', ');
 						} else {
 							debugger;
 							status.innerHTML = 'Oops! There was a problem submitting your form';
@@ -120,10 +121,6 @@
 		gap: 1rem;
 	}
 
-	select {
-		max-width: 10rem;
-	}
-
 	input,
 	textarea {
 		width: 100%;
@@ -138,35 +135,5 @@
 
 	textarea {
 		max-width: 90%;
-	}
-
-	.logo-grid {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 2rem;
-
-		img {
-			@media screen and (max-width: 500px) {
-				max-width: 100px;
-			}
-
-			@media screen and (min-width: $breakpoint) {
-				max-width: 80px;
-			}
-
-			cursor: pointer;
-			transition: all 0.2s ease;
-			object-fit: contain;
-
-			&:hover {
-				transform: scale(1.04);
-				opacity: 0.9;
-			}
-
-			&:active {
-				transform: scale(0.94);
-				opacity: 1;
-			}
-		}
 	}
 </style>
