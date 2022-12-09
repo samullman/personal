@@ -9,6 +9,8 @@
 
 <h1>Web application services.</h1>
 
+<LazyImage src="/hero.jpeg" alt="Galaxy" />
+
 <p>Helping you grow with systems you've already picked and ones you have not heard of yet.</p>
 
 <br />

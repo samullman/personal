@@ -23,11 +23,31 @@
 
 <h1>About</h1>
 
-<p>My name is Sam Ullman.</p>
+<div class="profile-img">
+	<LazyImage src="/crossed-arms.png" alt="Sam Ullman" />
+</div>
 
-<p>I started programming in 2015 at App Academy bootcamp in San Francisco, CA.</p>
+<p>
+	My name is Sam Ullman and I live in <a
+		href="https://goo.gl/maps/fr29rLrDqvXRUSsx5"
+		target="_blank">Austin, TX</a
+	>.
+</p>
 
-<p>Currently, I'm enjoying.</p>
+<p>
+	Currently, I am helping organizations and comapanies build out and scale their web infrastructure
+	and reach.
+</p>
+
+<p>
+	Whether you are global or local – I would love to help you grow your product from first launch and
+	beyond.
+</p>
+
+<p>
+	I started programming in 2015 at a coding bootcamp in San Francisco and have since learned
+	Fullstack and Frontend Development with JavaSript and Typescript.
+</p>
 
 <br />
 
@@ -36,7 +56,7 @@
 <div class="logo-grid">
 	{#each socials as item}
 		<a class="cancel-background" href={item.target} target="_blank">
-			<img src={item.image} alt={item.title} preload/>
+			<img src={item.image} alt={item.title} preload />
 		</a>
 	{/each}
 </div>
@@ -44,6 +64,14 @@
 <style lang="scss">
 	p {
 		font-size: 1.1rem;
+	}
+
+	.profile-img {
+		width: 12rem;
+		height: 12rem;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-bottom: 1.5rem;
 	}
 
 	.logo-grid {

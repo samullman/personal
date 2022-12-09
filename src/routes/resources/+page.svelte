@@ -1,12 +1,12 @@
-<script>
-	import resources from '../../lib/data/resources.json';
+<script lang="ts">
+	import resources from '../../data/resources.json';
 	import Lazy from 'svelte-lazy';
 	import jump from 'jump.js';
 	import 'animate.css';
 
 	let jumping = false;
 
-	function destinationReached(tag) {
+	function destinationReached(tag: string) {
 		document.querySelectorAll(`[data-name=${tag}]`)[0].classList += ' animate__headShake';
 
 		setTimeout(() => {
@@ -14,7 +14,7 @@
 		}, 500);
 	}
 
-	function removeAnimation(tag) {
+	function removeAnimation(tag: string) {
 		jumping = false;
 		document.querySelectorAll(`[data-name=${tag}]`)[0].classList.remove('animate__headShake');
 	}
