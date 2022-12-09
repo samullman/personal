@@ -47,7 +47,7 @@
 	<br />
 
 	<div>
-		<a href="/samples/periodic-table" class="cancel-background">
+		<a href="/samples/periodic-table">
 			<button>
 				{'<'} Periodic Table
 			</button>
@@ -61,6 +61,7 @@
 		flex-direction: column;
 		margin: 0 auto;
 	}
+
 
 	.shell {
 		margin-bottom: 1em;
@@ -88,4 +89,5 @@
 		height: 5em;
 		border-radius: 0.5em;
 	}
+
 </style>

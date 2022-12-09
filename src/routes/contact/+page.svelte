@@ -7,6 +7,20 @@
 		message: object;
 	}
 
+	const socials = [
+		{
+			title: 'LinkedIn',
+			target: 'https://www.linkedin.com/in/samullman/',
+			image: '/linkedin.png'
+		},
+
+		{
+			title: 'Github',
+			target: 'https://www.github.com/samullman/',
+			image: '/github.png'
+		}
+	];
+
 	function handleSubmit(e: eventType) {
 		e.preventDefault();
 		var status = document.querySelectorAll('.status')[0];
@@ -48,10 +62,10 @@
 </svelte:head>
 
 <p>
-	I would love to hear from you sometime. Please use the form below or schedule with me directly via <a
+	i would love to hear from you soon. please use the form below or schedule with me directly via <a
 		href="https://www.calendly.com/samullman/meeting"
-		target="_blank">Calendly</a
-	>.
+		target="_blank">calendly</a
+	>
 </p>
 
 <br />
@@ -64,38 +78,48 @@
 		on:submit={handleSubmit}
 	>
 		<div>
-			<label for="name">Name</label>
+			<label for="name">name</label>
 			<input name="name" required />
 		</div>
 
 		<div>
-			<label for="email">Email</label>
+			<label for="email">email</label>
 			<input type="email" name="name" required />
 		</div>
 
 		<div>
-			<label for="phone">Phone</label>
+			<label for="phone">phone</label>
 			<input type="tel" name="name" />
 		</div>
 
 		<div>
-			<label for="organization">Organization</label>
+			<label for="organization">organization</label>
 			<input name="organization" />
 		</div>
 
 		<div>
-			<label for="message">Message</label>
+			<label for="message">message</label>
 			<textarea name="message" rows="5" />
 		</div>
 
 		<div>
-			<button type="submit"> Submit </button>
+			<button type="submit"> submit </button>
 		</div>
 	</form>
 
 	<br />
 
 	<div class="status" />
+</div>
+
+<br />
+
+<div class="logo-grid">
+	{#each socials as item}
+		<a class="cancel-background" href={item.target} target="_blank">
+			<img src={item.image} alt={item.title} preload />
+		</a>
+	{/each}
 </div>
 
 <!-- <div class="logo-grid">
@@ -132,5 +156,35 @@
 
 	textarea {
 		max-width: 90%;
+	}
+
+	.logo-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+
+		img {
+			@media screen and (max-width: $breakpoint) {
+				max-width: 50px;
+			}
+
+			@media screen and (min-width: $breakpoint) {
+				max-width: 80px;
+			}
+
+			cursor: pointer;
+			transition: all 0.2s ease;
+			object-fit: contain;
+
+			&:hover {
+				transform: scale(1.04);
+				opacity: 0.9;
+			}
+
+			&:active {
+				transform: scale(0.94);
+				opacity: 1;
+			}
+		}
 	}
 </style>

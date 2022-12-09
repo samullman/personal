@@ -1,10 +1,10 @@
 <ul>
 	<li>
-		<a href="/samples/sacred-times"> Sacred Times </a>
+		<a href="/samples/sacred-times"> sacred times </a>
 	</li>
 
 	<li>
-		<a href="/samples/periodic-table"> Periodic Table </a>
+		<a href="/samples/periodic-table"> periodic table </a>
 	</li>
 </ul>
 
@@ -13,6 +13,8 @@
 		font-size: 1.12rem;
 		display: flex;
 		flex-direction: column;
-		gap: 0.3rem;
+		gap: 2rem;
+		padding: 0;
+		list-style: none;
 	}
 </style>

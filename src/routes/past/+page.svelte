@@ -78,9 +78,7 @@
 				</div>
 			</div>
 
-			<a class="cancel-background" href={item.link} target="_blank">
-				<LazyImage src={item.image} alt={item.title} />
-			</a>
+			<!-- <LazyImage src={item.image} alt={item.title} /> -->
 		</div>
 	{/each}
 </div>
@@ -90,8 +88,6 @@
 <style lang="scss">
 	.vertical-flex {
 		display: flex;
-		max-width: 800px;
-		margin: 0 auto;
 		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;

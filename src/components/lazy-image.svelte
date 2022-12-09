@@ -5,14 +5,20 @@
 	export let height: number = 400;
 </script>
 
-<Lazy {height} fadeOption={{ delay: 0, duration: 250 }}>
-	<img class="lazy-image rounded" {src} {alt} />
-</Lazy>
+<div class="lazy-img">
+	<Lazy {height} fadeOption={{ delay: 0, duration: 250 }}>
+		<img class="lazy-image rounded" {src} {alt} />
+	</Lazy>
+</div>
 
 <style lang="scss">
+	.lazy-img {
+		max-height: 90vh;
+	}
+
 	img {
-		max-height: 400px;
 		max-width: 100%;
+		max-height: 88vh;
 		margin: 0.5rem auto;
 	}
 </style>

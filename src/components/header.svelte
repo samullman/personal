@@ -31,9 +31,16 @@
 <style lang="scss">
 	header {
 		padding-bottom: 0;
+		display: flex;
+		justify-items: center;
+		justify-content: space-between;
 
 		a {
-			color: inherit !important;
+			color: inherit;
+
+			&:hover {
+				color: white;
+			}
 		}
 	}
 
@@ -44,6 +51,7 @@
 			gap: 1.5rem;
 			padding-left: 0;
 			list-style: none;
+			margin: 0;
 
 			@media screen and (max-width: $breakpoint) {
 				display: none;

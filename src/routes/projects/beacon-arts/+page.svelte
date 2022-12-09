@@ -68,6 +68,10 @@
 	}
 </script>
 
+<h1>Sacred Times</h1>
+
+<p>Programatically generated, color-coded list of digital times that mean something?</p>
+
 <div class="sacred-times">
 	{#each times as { hour, minute }}
 		<div class={'time color-' + hour + ' ' + 'index-' + minute}>
@@ -77,9 +81,9 @@
 </div>
 
 <div class="return-btn">
-	<a href="/samples" class="cancel-background">
+	<a href="/samples">
 		<button>
-			{'<'} samples
+			{'<'} Samples
 		</button>
 	</a>
 </div>
@@ -93,10 +97,6 @@
 
 <style lang="scss">
 	@use 'sass:math';
-
-	img {
-		max-width: 500px;
-	}
 
 	.sacred-times {
 		display: flex;
