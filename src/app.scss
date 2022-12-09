@@ -38,7 +38,7 @@ h6 {
 h1 {
 	font-size: 3rem;
 	margin-bottom: 2rem;
-	font-family: 'Syne';
+	// font-family: 'Syne';
 	font-weight: 900;
 
 	@media screen and (max-width: $breakpoint) {
@@ -82,22 +82,31 @@ main {
 
 a.cancel-background {
 	&:hover {
-		background: none;
+		background: none !important;
 	}
 }
 
 a {
 	text-decoration-thickness: 0.2rem;
-	text-decoration-color: #fbf6c9d9;
+	text-decoration-color: $sky-blue;
 	transition: all 0.4s ease;
 	background: $light;
 	display: inline-block;
 	color: inherit;
 	// padding: 0 0.5rem;
 
+	&[target='_blank'] {
+		text-decoration-color: $orange;
+
+		&:hover {
+			text-decoration-color: $orange;
+			background: $orange;
+		}
+	}
+
 	&:hover {
-		text-decoration-color: #fbf6c9d9;
-		background: #fbf6c9d9;
+		text-decoration-color: $sky-blue;
+		background: $sky-blue;
 	}
 }
 

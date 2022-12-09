@@ -8,7 +8,6 @@
 		}
 	];
 
-
 	const history = [
 		{
 			title: '1906',
@@ -50,11 +49,9 @@
 </script>
 
 <svelte:head>
-	<title>Portfolio</title>
+	<title>Past</title>
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
-
-<h1>Portfolio</h1>
 
 <div class="vertical-flex">
 	{#each history as item}

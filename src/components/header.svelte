@@ -1,14 +1,16 @@
 <script>
-	import links from '$lib/data/links.json';
+	import { page } from '$app/stores';
+	import links from './header.json';
 	import Drawer from './drawer.svelte';
 </script>
 
 <header class="max-width std-spacing">
 	<div>
 		<strong>
-			<a href="/"> Sam Ullman ↔ Web Developer </a>
+			<a href="/">{$page.url.host}</a>
 		</strong>
 	</div>
+
 	<div>
 		<nav>
 			<ul>
@@ -34,6 +36,7 @@
 			color: inherit !important;
 		}
 	}
+
 	nav {
 		ul {
 			display: flex;

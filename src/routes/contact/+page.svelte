@@ -47,8 +47,6 @@
 	<meta name="description" content="Turning energy into assets." />
 </svelte:head>
 
-<h1>Contact</h1>
-
 <p>
 	I would love to hear from you sometime. Please use the form below or schedule with me directly via <a
 		href="https://www.calendly.com/samullman/meeting"

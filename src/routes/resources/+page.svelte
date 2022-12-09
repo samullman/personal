@@ -1,5 +1,5 @@
 <script lang="ts">
-	import resources from '$lib/data/resources.json';
+	import resources from './data.json';
 	import Lazy from 'svelte-lazy';
 	import jump from 'jump.js';
 	import 'animate.css';

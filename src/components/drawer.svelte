@@ -30,7 +30,7 @@
 		}
 	}
 
-	import links from '$lib/data/links.json';
+	import links from './header.json';
 </script>
 
 <svelte:window on:scroll={handleOnScroll} />
@@ -108,7 +108,7 @@
 
 			<nav>
 				<div>
-					<a href="/" title="Home" on:click={() => (open = false)}> Home </a>
+					<a href="/" title="Home" on:click={() => (open = false)}> home </a>
 				</div>
 
 				{#each links as link}

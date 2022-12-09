@@ -1,0 +1,21 @@
+[
+	{
+		"url": "/about",
+		"title": "about"
+	},
+
+	{
+		"url": "/past",
+		"title": "past"
+	},
+
+	{
+		"url": "/samples",
+		"title": "samples"
+	},
+
+	{
+		"url": "/contact",
+		"title": "contact"
+	}
+]
