@@ -64,10 +64,10 @@
 <h1>Contact</h1>
 
 <p>
-	i would love to hear from you soon. please use the form below or schedule with me directly via <a
+	I would love to hear from you soon. Please use the form below or schedule with me directly via <a
 		href="https://www.calendly.com/samullman/meeting"
-		target="_blank">calendly</a
-	>
+		target="_blank">Calendly</a
+	>.
 </p>
 
 <br />
@@ -80,32 +80,32 @@
 		on:submit={handleSubmit}
 	>
 		<div>
-			<label for="name">name</label>
+			<label for="name">Name</label>
 			<input name="name" required />
 		</div>
 
 		<div>
-			<label for="email">email</label>
+			<label for="email">Email</label>
 			<input type="email" name="name" required />
 		</div>
 
 		<div>
-			<label for="phone">phone</label>
+			<label for="phone">Phone</label>
 			<input type="tel" name="name" />
 		</div>
 
 		<div>
-			<label for="organization">organization</label>
+			<label for="organization">Organization</label>
 			<input name="organization" />
 		</div>
 
 		<div>
-			<label for="message">message</label>
+			<label for="message">Message</label>
 			<textarea name="message" rows="5" />
 		</div>
 
 		<div>
-			<button type="submit"> submit </button>
+			<button type="submit"> Submit </button>
 		</div>
 	</form>
 

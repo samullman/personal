@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	import links from './header.json';
+	import links from './links.json';
 	import Drawer from './drawer.svelte';
 </script>
 
@@ -19,6 +19,28 @@
 						</a>
 					</li>
 				{/each}
+
+				<li>
+					<a
+						class="cancel-background"
+						href="https://github.com/samullman"
+						target="_blank"
+						title="Github"
+					>
+						<img src="/github.svg" alt="Github" />
+					</a>
+				</li>
+
+				<li>
+					<a
+						class="cancel-background"
+						href="https://linkedin.com/in/samullman"
+						target="_blank"
+						title="Github"
+					>
+						<img src="/linkedin.svg" alt="LinkedIn" />
+					</a>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -42,6 +64,11 @@
 		}
 	}
 
+	img {
+		height: 28.4px;
+		width: 28.4px;
+	}
+
 	nav {
 		ul {
 			display: flex;
@@ -50,8 +77,9 @@
 			padding-left: 0;
 			list-style: none;
 			margin: 0;
+			justify-items: center;
 
-			@media screen and (max-width: $breakpoint) {
+			@media screen and (max-width: $header-breakpoint) {
 				display: none;
 			}
 		}

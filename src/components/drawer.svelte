@@ -30,7 +30,7 @@
 		}
 	}
 
-	import links from './header.json';
+	import links from './links.json';
 </script>
 
 <svelte:window on:scroll={handleOnScroll} />
@@ -104,11 +104,10 @@
 
 		<div class="contents">
 			<!-- <h3>{$page.url.host}</h3> -->
-			<h3>Sam Ullman ↔ Web Developer</h3>
 
 			<nav>
 				<div>
-					<a href="/" title="Home" on:click={() => (open = false)}> home </a>
+					<a href="/" on:click={() => (open = false)}>{$page.url.host}</a>
 				</div>
 
 				{#each links as link}
@@ -119,6 +118,26 @@
 					</div>
 				{/each}
 
+				<div class="social-icons">
+					<a
+						class="cancel-background"
+						href="https://github.com/samullman"
+						target="_blank"
+						title="Github"
+					>
+						<img src="/github.svg" alt="Github" />
+					</a>
+
+					<a
+						class="cancel-background"
+						href="https://linkedin.com/in/samullman"
+						target="_blank"
+						title="Github"
+					>
+						<img src="/linkedin.svg" alt="LinkedIn" />
+					</a>
+				</div>
+
 				<br />
 			</nav>
 		</div>
@@ -126,6 +145,16 @@
 </Drawer>
 
 <style lang="scss">
+	.social-icons {
+		margin-top: 1rem;
+		display: flex;
+		gap: 1rem;
+
+		img {
+			width: 28.4px;
+			height: 28.4px;
+		}
+	}
 	.header {
 		position: fixed;
 		top: 0.75rem;
@@ -146,7 +175,7 @@
 			flex-direction: row;
 			right: 1.5rem;
 			padding: 0.5rem;
-			top: 1rem;
+			top: 2rem;
 			bottom: auto;
 		}
 	}
@@ -162,13 +191,17 @@
 
 	.menu-button {
 		display: block;
+		padding-bottom: 0.05rem;
 
 		@media screen and (min-width: $breakpoint) {
+			padding-bottom: 0.35rem;
+		}
+
+		@media screen and (min-width: $header-breakpoint) {
 			display: none;
 		}
 
 		svg {
-			margin-bottom: -0.25rem;
 			width: 1.9rem;
 		}
 	}
@@ -188,6 +221,12 @@
 	}
 
 	.chevron-button {
+		padding-bottom: 0rem;
+
+		@media screen and (min-width: $breakpoint) {
+			padding-bottom: 0.35rem;
+		}
+
 		svg {
 			width: 1.7rem;
 		}
@@ -203,7 +242,7 @@
 
 	.close-button {
 		padding: 0.35rem 0.9rem;
-		padding-bottom: 0.2rem;
+		padding-bottom: 0rem;
 
 		svg {
 			width: 1.5rem;
@@ -217,6 +256,8 @@
 		height: calc(100% - 2rem);
 
 		.contents {
+			padding: 1rem;
+
 			padding-top: 2rem;
 		}
 

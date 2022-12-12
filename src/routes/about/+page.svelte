@@ -14,13 +14,16 @@
 </div>
 
 <p>
-	currently, living in <a href="https://goo.gl/maps/fr29rLrDqvXRUSsx5" target="_blank">austin, tx</a
-	>,
+	My name is Sam Ullman. I live in <a href="https://goo.gl/maps/fr29rLrDqvXRUSsx5" target="_blank"
+		>Austin, TX</a
+	>. I have 7 years experience building Web Applications and a background in Biology and Economics.
 </p>
 
-<p>i'm helping organizations build and scale their offerings.</p>
+<p>
+	I'm available to help individuals, venture, and organizations build and scale their offerings.
+</p>
 
-<p>let's build the <a href="/contact">future together</a>.</p>
+<p><a href="/contact">Let's build together</a>.</p>
 
 <style lang="scss">
 	.profile-img {
