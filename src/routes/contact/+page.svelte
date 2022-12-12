@@ -61,6 +61,8 @@
 	<meta name="description" content="Turning energy into assets." />
 </svelte:head>
 
+<h1>Contact</h1>
+
 <p>
 	i would love to hear from you soon. please use the form below or schedule with me directly via <a
 		href="https://www.calendly.com/samullman/meeting"
@@ -130,6 +132,9 @@
 	{/each}
 </div> -->
 <style lang="scss">
+	p {
+		max-width: 40rem;
+	}
 	label {
 		display: block;
 		font-size: 0.9rem;

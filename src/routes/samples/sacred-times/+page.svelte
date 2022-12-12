@@ -85,7 +85,7 @@
 </div>
 
 <div class="code-box">
-	<h2>Svelte Code</h2>
+	<h2>svelte code</h2>
 	<div>
 		<img class="rounded" src="/samples/sacred-times.png" alt="Sacred Times Code" />
 	</div>
@@ -107,7 +107,7 @@
 		.time {
 			border: 0.1rem solid $dark;
 			padding: 0.25rem 0.5rem;
-			border-radius: 0.25rem;
+			border-radius: 0.45rem;
 			transition: all 0.2s ease;
 			user-select: none;
 			cursor: pointer;

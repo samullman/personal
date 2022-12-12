@@ -9,9 +9,9 @@
 
 <div class="std-spacing max-width">
 	<main>
-		<h1>
+		<h4>
 			{$page.url.pathname}
-		</h1>
+		</h4>
 
 		<slot />
 	</main>
@@ -20,4 +20,8 @@
 <Footer />
 
 <style lang="scss">
+	h4 {
+		margin-top: 0.25rem;
+		margin-bottom: 0.5rem;
+	}
 </style>

@@ -8,6 +8,7 @@
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
+<h1>About</h1>
 <div class="profile-img">
 	<LazyImage src="/crossed-arms.png" alt="Sam Ullman" />
 </div>

@@ -6,9 +6,7 @@
 
 <header class="max-width std-spacing">
 	<div>
-		<strong>
-			<a href="/">{$page.url.host}</a>
-		</strong>
+		<a href="/">{$page.url.host}</a>
 	</div>
 
 	<div>

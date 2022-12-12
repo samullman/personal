@@ -53,6 +53,8 @@
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
+<h1>Past</h1>
+
 <div class="vertical-flex">
 	{#each history as item}
 		<div class="portfolio-item">
@@ -98,7 +100,7 @@
 			flex-direction: column;
 			gap: 0.4rem;
 			margin-bottom: 0.8rem;
-			font-size: 1.08rem;
+			font-size: 1rem;
 
 			h3 {
 				margin: 0;

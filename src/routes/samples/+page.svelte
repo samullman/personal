@@ -1,3 +1,5 @@
+<h1>Samples</h1>
+
 <ul>
 	<li>
 		<a href="/samples/sacred-times"> sacred times </a>
@@ -10,10 +12,9 @@
 
 <style lang="scss">
 	ul {
-		font-size: 1.12rem;
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 1rem;
 		padding: 0;
 		list-style: none;
 	}
