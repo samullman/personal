@@ -30,50 +30,52 @@
 	});
 </script>
 
+<h1>Periodic Table</h1>
+
 <div class="table">
-	<h2>period 1</h2>
+	<h2>Period 1</h2>
 	<div class="atom-grid period-1">
 		{#each per1 as [key, value]}
 			<Atom {key} {value} />
 		{/each}
 	</div>
 
-	<h2>period 2</h2>
+	<h2>Period 2</h2>
 	<div class="atom-grid period-2">
 		{#each per2 as [key, value]}
 			<Atom {key} {value} />
 		{/each}
 	</div>
 
-	<h2>period 3</h2>
+	<h2>Period 3</h2>
 	<div class="atom-grid period-3">
 		{#each per3 as [key, value]}
 			<Atom {key} {value} />
 		{/each}
 	</div>
 
-	<h2>period 4</h2>
+	<h2>Period 4</h2>
 	<div class="atom-grid period-4">
 		{#each per4 as [key, value]}
 			<Atom {key} {value} />
 		{/each}
 	</div>
 
-	<h2>period 5</h2>
+	<h2>Period 5</h2>
 	<div class="atom-grid period-5">
 		{#each per5 as [key, value]}
 			<Atom {key} {value} />
 		{/each}
 	</div>
 
-	<h2>period 6</h2>
+	<h2>Period 6</h2>
 	<div class="atom-grid period-6">
 		{#each per6 as [key, value]}
 			<Atom {key} {value} />
 		{/each}
 	</div>
 
-	<h2>period 7</h2>
+	<h2>Period 7</h2>
 	<div class="atom-grid period-7">
 		{#each per7 as [key, value]}
 			<Atom {key} {value} />

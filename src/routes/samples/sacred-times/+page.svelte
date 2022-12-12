@@ -68,6 +68,8 @@
 	}
 </script>
 
+<h1>Sacred Times</h1>
+
 <div class="sacred-times">
 	{#each times as { hour, minute }}
 		<div class={'time color-' + hour + ' ' + 'index-' + minute}>
@@ -79,13 +81,13 @@
 <div class="return-btn">
 	<a href="/samples" class="cancel-background">
 		<button>
-			{'<'} samples
+			{'<'} Samples
 		</button>
 	</a>
 </div>
 
 <div class="code-box">
-	<h2>svelte code</h2>
+	<h2>Svelte Code</h2>
 	<div>
 		<img class="rounded" src="/samples/sacred-times.png" alt="Sacred Times Code" />
 	</div>

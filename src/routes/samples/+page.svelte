@@ -2,11 +2,11 @@
 
 <ul>
 	<li>
-		<a href="/samples/sacred-times"> sacred times </a>
+		<a href="/samples/sacred-times"> Sacred Times </a>
 	</li>
 
 	<li>
-		<a href="/samples/periodic-table"> periodic table </a>
+		<a href="/samples/periodic-table"> Periodic Table </a>
 	</li>
 </ul>
 
