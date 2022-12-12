@@ -1,0 +1,19 @@
+[
+	{
+		"title": "Chemistry",
+		"slug": "/chemistry",
+		"courses": [
+			{
+				"title": "General Chemistry I",
+				"slug": "/gen-chem-i",
+				"offeredBy": "MITx",
+				"courseNum": "5.01x",
+				"platform": {
+					"title": "EdX",
+					"url": "https://edx.com/"
+				},
+				"link": "foobar"
+			}
+		]
+	}
+]

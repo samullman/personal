@@ -1,30 +1,5 @@
 <script lang="ts">
-	import resources from './data.json';
-	import Lazy from 'svelte-lazy';
-	import jump from 'jump.js';
-	import 'animate.css';
-
-	const topics = [
-		{
-			title: 'chemistry',
-			slug: '/chemistry'
-		}
-	];
-
-	let jumping = false;
-
-	function destinationReached(tag: string) {
-		document.querySelectorAll(`[data-name=${tag}]`)[0].classList += ' animate__headShake';
-
-		setTimeout(() => {
-			removeAnimation(tag);
-		}, 500);
-	}
-
-	function removeAnimation(tag: string) {
-		jumping = false;
-		document.querySelectorAll(`[data-name=${tag}]`)[0].classList.remove('animate__headShake');
-	}
+	import courses from '../courses.json';
 </script>
 
 <svelte:head>
@@ -34,15 +9,36 @@
 
 <h1>Chemistry</h1>
 
+<h3>Courses</h3>
+
 <ul>
-	{#each topics as { slug, title }}
+	{#each courses as { slug, title, courses }}
 		<li>
-			<a href={'/learning' + slug} {title}>
-				{title}
-			</a>
+			{#each courses as course}
+				<div>
+					<a href={'/learning' + slug + course.slug}>{course.title}</a>
+				</div>
+				<div>
+					Platform: <a href={course.platform.url} target="_blank">{course.platform.title}</a>
+				</div>
+			{/each}
 		</li>
 	{/each}
 </ul>
 
 <style lang="scss">
+	h2 {
+		padding: 0 !important;
+	}
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			flex-direction: column;
+			display: flex;
+			gap: 0.75rem;
+		}
+	}
 </style>

@@ -1,15 +1,9 @@
 <script lang="ts">
-	import resources from './data.json';
 	import Lazy from 'svelte-lazy';
 	import jump from 'jump.js';
 	import 'animate.css';
 
-	const topics = [
-		{
-			title: 'chemistry',
-			slug: '/chemistry'
-		}
-	];
+	import courses from './courses.json';
 
 	let jumping = false;
 
@@ -35,14 +29,20 @@
 <h1>Learning</h1>
 
 <ul>
-	{#each topics as { slug, title }}
+	{#each courses as { slug, title }}
 		<li>
-			<a href={'/learning' + slug} {title}>
-				{title}
-			</a>
+			<a href={'/learning' + slug} {title}> {title} </a>
 		</li>
 	{/each}
 </ul>
 
 <style lang="scss">
+	h2 {
+		padding: 0 !important;
+	}
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+	}
 </style>
