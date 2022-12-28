@@ -116,13 +116,6 @@
 
 <br />
 
-<div class="logo-grid">
-	{#each socials as item}
-		<a class="cancel-background" href={item.target} target="_blank">
-			<img src={item.image} alt={item.title} preload />
-		</a>
-	{/each}
-</div>
 
 <!-- <div class="logo-grid">
 	{#each socials as item}
