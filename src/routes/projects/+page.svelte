@@ -18,11 +18,11 @@
 	</li>
 
 	<li>
-		<a href="/samples/periodic-table"> Periodic Table </a>
+		<a href="/projects/periodic-table"> Periodic Table </a>
 	</li>
 
 	<li>
-		<a href="/samples/sacred-times"> Sacred Times </a>
+		<a href="/projects/sacred-times"> Sacred Times </a>
 	</li>
 </ul>
 
