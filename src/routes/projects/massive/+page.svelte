@@ -1,4 +1,10 @@
-<h1>Beacon Arts</h1>
+<h1>Massive</h1>
+
+<div>
+	<a href="https://massive.solar" target="_blank"> https://massive.solar</a>
+</div>
+
+<br />
 
 <div class="return-btn">
 	<a href="/projects" class="cancel-background">

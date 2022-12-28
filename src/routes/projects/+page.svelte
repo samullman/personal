@@ -1,4 +1,14 @@
+<h1>Projects</h1>
+
 <ul>
+	<li>
+		<a href="/projects/massive"> Massive </a>
+	</li>
+
+	<li>
+		<a href="/projects/bitcoin-js"> Bitcoin.js </a>
+	</li>
+
 	<li>
 		<a href="/projects/beacon-arts"> Beacon Arts </a>
 	</li>
@@ -6,13 +16,24 @@
 	<li>
 		<a href="/projects/la-cena"> La Cena </a>
 	</li>
+
+	<li>
+		<a href="/samples/periodic-table"> Periodic Table </a>
+	</li>
+
+	<li>
+		<a href="/samples/sacred-times"> Sacred Times </a>
+	</li>
 </ul>
+
+<ul />
 
 <style lang="scss">
 	ul {
-		font-size: 1.12rem;
 		display: flex;
 		flex-direction: column;
-		gap: 0.3rem;
+		gap: 1rem;
+		padding: 0;
+		list-style: none;
 	}
 </style>

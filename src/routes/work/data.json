@@ -1,0 +1,76 @@
+[
+	{
+		"time": "2022",
+		"work": [
+			{
+				"title": "Marinade Finance",
+				"link": "https://marinade.finance/",
+				"image": "/history/marinade.png",
+				"description": "After competing in the Solana hackathon I was invited to participate in full stack development for a winning project. We built out landing pages and some in-app functionality. Paid in crypto.",
+				"tags": ["Next.js", "Chakra UI", "React-Query"]
+			}
+		]
+	},
+
+	{
+		"time": "2021",
+		"work": [
+			{
+				"title": "Code Nation",
+				"link": "https://codenation.org/",
+				"image": "/history/code-nation.png",
+				"description": "I built multiple reporting/marketing websites for Code Nation.",
+				"tags": ["Next.js", "Chakra UI", "JavaScript", "Chart.js", "SCSS"]
+			}
+		]
+	},
+
+	{
+		"time": "2020",
+		"work": [
+			{
+				"title": "Munchery",
+				"link": "https://munchery.com/",
+				"image": "/history/munchery.png",
+				"description": "I conducted a performance audit on the Munchery website and platform.  I was able to decrease page loading times by over 30% with code splitting and image optmizations.",
+				"tags": ["React.js", "JavaScript", "SCSS", "Performance Audit"]
+			}
+		]
+	},
+
+	{
+		"time": "2019",
+		"work": [
+			{
+				"title": "COCO5",
+				"link": "https://coco5.com/",
+				"description": "I built the frontend of a Shopify store for a leading coconut water company in North America.",
+				"image": "/history/coco5.jpeg",
+				"tags": ["Shopify", "CSS", "Liquid", "JavaScript"]
+			}
+		]
+	},
+
+	{
+		"time": "2018",
+		"work": [
+			{
+				"title": "1906",
+				"link": "https://1906newhighs.com/",
+				"description": "An example of a Headless E-commerce store using Gatsby.js and the shopify-buy SDK.",
+				"image": "/history/1906.png",
+				"tags": ["Gatsby.js", "JavaScript", "SCSS", "Styled Components"]
+			}
+		]
+	},
+
+	{
+		"time": "2017",
+		"work": []
+	},
+
+	{
+		"time": "2016",
+		"work": []
+	}
+]
