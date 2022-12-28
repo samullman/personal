@@ -79,9 +79,9 @@
 </div>
 
 <div class="return-btn">
-	<a href="/samples" class="cancel-background">
+	<a href="/projects" class="cancel-background">
 		<button>
-			{'<'} Samples
+			{'<'} Projects
 		</button>
 	</a>
 </div>

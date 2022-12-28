@@ -60,12 +60,12 @@
 <div class="buttons">
 	<button on:click={copy}> Copy </button>
 
-	<a href={token.url} target="_blank" class="cancel-background">
+	<a class="cancel-background" href={token.url} target="_blank">
 		<button>Website</button>
 	</a>
 
-	<a href="/wallets">
-		<button> {'<'} Wallets </button>
+	<a class="cancel-background" href="/addresses">
+		<button> {'<'} Addresses </button>
 	</a>
 </div>
 
