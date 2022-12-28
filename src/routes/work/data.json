@@ -66,11 +66,27 @@
 
 	{
 		"time": "2017",
-		"work": []
+		"work": [
+			{
+				"title": "Bon Mua Oregon",
+				"link": "https://www.bonmuaoregon.com/",
+				"description": "An E-commerce site for a top coffee exporter in Portland, OR, USA. ",
+				"image": "/history/bon.jpeg",
+				"tags": ["WIX", "E-commerce", "CSS", "JavaScript"]
+			}
+		]
 	},
 
 	{
 		"time": "2016",
-		"work": []
+		"work": [
+			{
+				"title": "Columbia Corridor Association",
+				"link": "http://www.cca.works/",
+				"description": "An marketing site and blog for a public works company in Portland, OR, USA.",
+				"image": "/history/cca.jpeg",
+				"tags": ["Ruby on Rails", "HTML", "CSS", "JavaScript"]
+			}
+		]
 	}
 ]
