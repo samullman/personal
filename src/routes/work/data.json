@@ -55,6 +55,14 @@
 		"time": "2018",
 		"work": [
 			{
+				"title": "Applied Materials",
+				"link": "https://appliedmaterials.com/",
+				"description": "Marketing and PDF Viewer site for an initiative in 2019.",
+				"image": "/history/materials.jpeg",
+				"tags": ["Gatsby.js", "PDF.JS", "CSS", "Styled Components"]
+			},
+
+			{
 				"title": "1906",
 				"link": "https://1906newhighs.com/",
 				"description": "An example of a Headless E-commerce store using Gatsby.js and the shopify-buy SDK.",
