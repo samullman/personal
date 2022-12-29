@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Massive</title>
+	<meta name="description" content="Startup & Enterprise Consulting." />
+</svelte:head>
+
 <h1>Massive</h1>
 
 <div>

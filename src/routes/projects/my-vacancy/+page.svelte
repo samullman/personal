@@ -1,13 +1,13 @@
 <svelte:head>
-	<title>Bitcoin.js</title>
+	<title>My Vacancy</title>
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
-<h1>Bitcoin.js</h1>
+<h1>My Vacancy</h1>
 
 <div>
-	<a href="https://github.com/samullman/bitcoin-js" target="_blank">
-		https://github.com/samullman/bitcoin-js
+	<a href="https://github.com/samullman/my-vacancy" target="_blank">
+		https://github.com/samullman/my-vacancy
 	</a>
 </div>
 

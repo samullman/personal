@@ -30,6 +30,11 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Periodic Table</title>
+	<meta name="description" content="Startup & Enterprise Consulting." />
+</svelte:head>
+
 <h1>Periodic Table</h1>
 
 <div class="table">
@@ -81,6 +86,14 @@
 			<Atom {key} {value} />
 		{/each}
 	</div>
+</div>
+
+<div class="return-btn">
+	<a href="/projects" class="cancel-background">
+		<button>
+			{'<'} Projects
+		</button>
+	</a>
 </div>
 
 <style lang="scss">

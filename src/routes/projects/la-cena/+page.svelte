@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>La Cena</title>
+	<meta name="description" content="Startup & Enterprise Consulting." />
+</svelte:head>
+
 <h1>La Cena</h1>
 
 <div>

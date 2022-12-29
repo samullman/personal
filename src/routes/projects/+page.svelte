@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Projects</title>
+	<meta name="description" content="Startup & Enterprise Consulting." />
+</svelte:head>
+
 <h1>Projects</h1>
 
 <ul>
@@ -7,6 +12,10 @@
 
 	<li>
 		<a href="/projects/bitcoin-js"> Bitcoin.js </a>
+	</li>
+
+	<li>
+		<a href="/projects/my-vacancy"> My Vacancy </a>
 	</li>
 
 	<li>

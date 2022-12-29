@@ -68,6 +68,11 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Sacred Times</title>
+	<meta name="description" content="Startup & Enterprise Consulting." />
+</svelte:head>
+
 <h1>Sacred Times</h1>
 
 <div class="sacred-times">
