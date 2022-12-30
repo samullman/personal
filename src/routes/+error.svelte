@@ -10,33 +10,7 @@
 
 <h1>404: Not Found</h1>
 
-<Lazy height={140} fadeOption={{ delay: 0, duration: 50 }}>
-	<img src="/flower.png" alt="Flower" />
-</Lazy>
-
-<div class="page-buttons">
-	<a href="/">
-		<button> Home </button>
-	</a>
-
-	<a href="/about">
-		<button> About </button>
-	</a>
-
-	<a href="/payments">
-		<button> Payments </button>
-	</a>
-
-	<a href="/portfolio">
-		<button> Portfolio </button>
-	</a>
-
-	<a href="/samples">
-		<button> Samples </button>
-	</a>
-</div>
-
-<br />
+<img src="https://media.giphy.com/media/wJSRkoZ8cD10Q/giphy.gif" alt="Shuffle" />
 
 <style lang="scss">
 	h1 {
@@ -47,9 +21,10 @@
 	}
 
 	img {
-		width: 120px;
+		width: 200px;
 		display: block;
 		margin: 2rem auto;
+		border-radius: 0.5rem;
 	}
 
 	.page-buttons {

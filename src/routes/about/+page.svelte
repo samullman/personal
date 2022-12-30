@@ -19,7 +19,7 @@
 	> and been building web applications for 7 years.
 </p>
 
-<p><a href="/contact">Let's build together</a>.</p>
+<p><a href="/contact">Let's build the future together</a>.</p>
 
 <style lang="scss">
 	p {

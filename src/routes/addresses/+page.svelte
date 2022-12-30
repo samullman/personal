@@ -20,8 +20,12 @@
 			<a href={'/addresses/' + item.slug} class="cancel-background">
 				<img src={'/tokens' + item.logoSrc} alt={item.title} />
 
-				<div>
+				<div class="title">
 					{item.title}
+				</div>
+
+				<div class="symbol">
+					({item.symbol})
 				</div>
 			</a>
 		</div>
@@ -68,6 +72,15 @@
 			@media screen and (min-width: $breakpoint) {
 				max-width: 100px;
 			}
+		}
+
+		.title {
+			font-size: 1.2rem;
+		}
+
+		.symbol {
+			font-weight: 900;
+			font-size: 0.8rem;
 		}
 	}
 </style>

@@ -1,5 +1,8 @@
 <script lang="ts">
-	import courses from '../courses.json';
+	import book from '../courses.json';
+	let courses = book.filter((el) => {
+		return el.title == 'Chemistry';
+	});
 </script>
 
 <svelte:head>
@@ -9,7 +12,7 @@
 
 <h1>Chemistry</h1>
 
-<h3>Courses</h3>
+<h2>Courses</h2>
 
 <ul>
 	{#each courses as { slug, title, courses }}
@@ -26,9 +29,20 @@
 	{/each}
 </ul>
 
+<br />
+
+<div>
+	<a href="/learning" class="cancel-background">
+		<button>
+			{'<'} Learning
+		</button>
+	</a>
+</div>
+
 <style lang="scss">
 	h2 {
 		padding: 0 !important;
+		margin: 0;
 	}
 
 	ul {

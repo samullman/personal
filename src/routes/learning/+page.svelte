@@ -4,6 +4,7 @@
 	import 'animate.css';
 
 	import courses from './courses.json';
+	import links from './links.json';
 
 	let jumping = false;
 
@@ -28,6 +29,8 @@
 
 <h1>Learning</h1>
 
+<h2>Courses</h2>
+
 <ul>
 	{#each courses as { slug, title }}
 		<li>
@@ -36,13 +39,38 @@
 	{/each}
 </ul>
 
+<h2>Links</h2>
+
+<ul>
+	{#each links as { url, title }}
+		<li>
+			<a href={'/learning' + url} {title} target="_blank"> {title} </a>
+		</li>
+	{/each}
+</ul>
+
+<br />
+
+<div class="return-btn">
+	<a href="/projects" class="cancel-background">
+		<button>
+			{'<'} Projects
+		</button>
+	</a>
+</div>
+
 <style lang="scss">
 	h2 {
 		padding: 0 !important;
+		margin: 0;
 	}
 
 	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 0.75rem;
 		padding-left: 0;
 		list-style: none;
+		margin-bottom: 2rem;
 	}
 </style>

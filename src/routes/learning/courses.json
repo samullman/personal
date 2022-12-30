@@ -1,5 +1,22 @@
 [
 	{
+		"title": "Physics",
+		"slug": "/physics",
+		"courses": [
+			{
+				"title": "Classical Mechanics",
+				"slug": "/classical-mechanics",
+				"offeredBy": "University Science Books",
+				"courseNum": "",
+				"platform": {
+					"title": "Book (PDF)",
+					"url": "/learning/taylor-2005-classical-mechanics.pdf"
+				},
+				"link": "foobar"
+			}
+		]
+	},
+	{
 		"title": "Chemistry",
 		"slug": "/chemistry",
 		"courses": [

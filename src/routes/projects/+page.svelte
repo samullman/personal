@@ -15,7 +15,15 @@
 	</li>
 
 	<li>
+		<a href="/learning/"> Learning </a>
+	</li>
+
+	<li>
 		<a href="/projects/my-vacancy"> My Vacancy </a>
+	</li>
+
+	<li>
+		<a href="/projects/sams-fine-cleaning"> Sam's Fine Cleaning </a>
 	</li>
 
 	<li>

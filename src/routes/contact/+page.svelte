@@ -46,13 +46,11 @@
 <h1>Contact</h1>
 
 <p>
-	Let's chat. I'm currently available for full/part-time work including one-off projects and
-	consulting. Please use the form below or schedule with me directly via <a
+	I'm currently available for full/part-time work including one-off projects and consulting. Please
+	use the form below or schedule with me directly via <a
 		href="https://www.calendly.com/samullman/meeting"
 		target="_blank">Calendly</a
-	>. Payments can be made using my direct
-	<a href="https://buy.stripe.com/28og0Y7r7gt31vq146" target="_blank">Stripe</a> link or using one
-	of my various crypto <a href="/addresses">addresses</a>.
+	>.
 </p>
 
 <br />
@@ -100,6 +98,12 @@
 </div>
 
 <br />
+
+<p>
+	Payments can be made using my direct
+	<a href="https://buy.stripe.com/28og0Y7r7gt31vq146" target="_blank">Stripe</a> link or one of my
+	various crypto <a href="/addresses">addresses</a>.
+</p>
 
 <!-- <div class="logo-grid">
 	{#each socials as item}
