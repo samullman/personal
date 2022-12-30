@@ -152,3 +152,11 @@ a {
 .rounded {
 	border-radius: 1rem;
 }
+
+.project-title {
+	display: inline-block !important;
+	background-color: lightgray;
+	padding: 0.25rem 1rem;
+	font-size: 0.9rem;
+	border-radius: 0.5rem;
+}

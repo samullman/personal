@@ -1,19 +1,15 @@
 <svelte:head>
-	<title>My Vacancy</title>
+	<title>Startup Curated</title>
 	<meta name="description" content="Startup & Enterprise Consulting." />
 </svelte:head>
 
-<h1>My Vacancy</h1>
+<h1>Startup Curated</h1>
 
 <div>
-	<p class="project-title">An open-source space renter.</p>
+	<p class="project-title">All you need to get started.</p>
 </div>
 
-<div>
-	<a href="https://github.com/samullman/my-vacancy" target="_blank">
-		https://github.com/samullman/my-vacancy
-	</a>
-</div>
+<div />
 
 <br />
 

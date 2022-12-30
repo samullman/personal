@@ -1,3 +1,21 @@
+<script>
+	import projects from './data.json';
+
+	function compare(a, b) {
+		return 0;
+
+		if (a.title[0] < b.title[0]) {
+			return -1;
+		}
+		if (a.title[0] > b.title[0]) {
+			return 1;
+		}
+
+		// names must be equal
+		return 0;
+	}
+</script>
+
 <svelte:head>
 	<title>Projects</title>
 	<meta name="description" content="Startup & Enterprise Consulting." />
@@ -6,41 +24,11 @@
 <h1>Projects</h1>
 
 <ul>
-	<li>
-		<a href="/projects/massive"> Massive </a>
-	</li>
-
-	<li>
-		<a href="/projects/bitcoin-js"> Bitcoin.js </a>
-	</li>
-
-	<li>
-		<a href="/learning/"> Learning </a>
-	</li>
-
-	<li>
-		<a href="/projects/my-vacancy"> My Vacancy </a>
-	</li>
-
-	<li>
-		<a href="/projects/sams-fine-cleaning"> Sam's Fine Cleaning </a>
-	</li>
-
-	<li>
-		<a href="/projects/beacon-arts"> Beacon Arts </a>
-	</li>
-
-	<li>
-		<a href="/projects/la-cena"> La Cena </a>
-	</li>
-
-	<li>
-		<a href="/projects/periodic-table"> Periodic Table </a>
-	</li>
-
-	<li>
-		<a href="/projects/sacred-times"> Sacred Times </a>
-	</li>
+	{#each projects.sort(compare) as { title, slug }}
+		<li>
+			<a href={'/projects' + slug} {title}> {title} </a>
+		</li>
+	{/each}
 </ul>
 
 <ul />
