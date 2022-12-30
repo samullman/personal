@@ -47,7 +47,7 @@
 	<br />
 
 	<div>
-		<a href="/samples/periodic-table" class="cancel-background">
+		<a href="/projects/periodic-table" class="cancel-background">
 			<button>
 				{'<'} Periodic Table
 			</button>

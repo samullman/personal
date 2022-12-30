@@ -62,6 +62,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/eczar/-/eczar-4.5.11.tgz#696b23e34ad436b516c37a493acdfdeabbb78a42"
   integrity sha512-gF1GgIL7SjlNYZwfhY9AFvDEh+49OxbV2dqsxUdDfoFTTpuFP9baLZqmAQpA+9F6bjdOwK+d790Lm8YtXd1jzA==
 
+"@fontsource/space-mono@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/space-mono/-/space-mono-4.5.10.tgz#f7e8782326cb31624332b98a67cd88c031cdc63e"
+  integrity sha512-OTrWNdcPp01bZjEbSu52vMu9PaReUFylHAMI4lctKVbYUnm+e7a4eG6YcnRvDrJEMYHBDtEWLAsqGVldV5r1EQ==
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.7.tgz#38aec044c6c828f6ed51d5d7ae3d9b9faf6dbb0f"
