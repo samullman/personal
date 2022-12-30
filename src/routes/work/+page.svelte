@@ -64,6 +64,7 @@
 			gap: 0.4rem;
 			margin-bottom: 0.8rem;
 			font-size: 1rem;
+			line-height: 190%;
 
 			h3 {
 				margin: 0;
@@ -94,6 +95,7 @@
 					display: inline-block;
 					border-radius: 0.35rem;
 					user-select: none;
+					line-height: 100%;
 				}
 			}
 		}
