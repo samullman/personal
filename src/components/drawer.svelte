@@ -178,6 +178,11 @@
 			top: 2rem;
 			bottom: auto;
 		}
+
+		@media screen and (min-width: $header-breakpoint) {
+			right: 2rem;
+			top: 2rem;
+		}
 	}
 
 	:global(.dark-mode) .header {

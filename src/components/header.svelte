@@ -54,6 +54,7 @@
 		display: flex;
 		justify-items: center;
 		justify-content: space-between;
+		font-size: 1.2rem;
 
 		a {
 			color: inherit;
