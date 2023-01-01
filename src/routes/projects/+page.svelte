@@ -25,9 +25,15 @@
 
 <ul>
 	{#each projects.sort(compare) as { title, slug }}
-		<li>
-			<a href={'/projects' + slug} {title}> {title} </a>
-		</li>
+		{#if title == 'Learning'}
+			<li>
+				<a href={'/learning'} {title}> {title} </a>
+			</li>
+		{:else}
+			<li>
+				<a href={'/projects' + slug} {title}> {title} </a>
+			</li>
+		{/if}
 	{/each}
 </ul>
 

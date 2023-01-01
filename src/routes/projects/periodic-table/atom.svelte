@@ -57,7 +57,7 @@
 
 		h2 {
 			font-size: 3.2em;
-			margin: 0;
+			margin: 1.5rem 0;
 		}
 
 		.name {

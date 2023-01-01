@@ -1,0 +1,157 @@
+[
+	{
+		"course": "classical-mechanics",
+		"filter": "trigonometric-identities",
+		"title": "Trigonometric Identities",
+		"eqs": [
+			{
+				"title": "",
+				"math": "sin(\\theta \\pm \\phi) = sin(\\theta)cos(\\phi) \\pm cos(\\theta)sin(\\phi)"
+			},
+
+			{
+				"title": "",
+				"math": "cos( \\theta \\pm \\phi )=cos(\\theta) cos(\\phi) \\mp sin(\\theta) sin(\\phi) "
+			},
+
+			{
+				"title": "",
+				"math": "cos( \\theta ) cos( \\phi ) = \\frac{1}{2} [cos(\\theta + \\phi) - cos(\\theta - \\phi)]"
+			},
+
+			{
+				"title": "",
+				"math": "sin( \\theta ) sin( \\phi ) = \\frac{1}{2} [cos(\\theta - \\phi)  -  cos(\\theta + \\phi)]"
+			},
+
+			{
+				"title": "",
+				"math": "sin( \\theta ) cos( \\phi ) = \\frac{1}{2} [sin(\\theta + \\phi) +  sin(\\theta - \\phi)]"
+			},
+
+			{
+				"title": "",
+				"math": "cos^2( \\theta ) = \\frac{1}{2} [1 + cos(2\\theta )]"
+			},
+
+			{
+				"title": "",
+				"math": "sin^2( \\theta ) = \\frac{1}{2} [1 - cos(2\\theta )]"
+			},
+
+			{
+				"title": "",
+				"math": "cos(\\theta) + cos(\\phi) = 2 cos( \\frac{\\theta + \\phi}{2} ) cos( \\frac{\\theta - \\phi}{2} )"
+			},
+
+			{
+				"title": "",
+				"math": "cos(\\theta) - cos(\\phi) = 2 sin( \\frac{\\theta + \\phi}{2} ) sin( \\frac{\\theta - \\phi}{2} )"
+			},
+
+			{
+				"title": "",
+				"math": "sin(\\theta) \\pm sin(\\phi) = 2 sin( \\frac{\\theta \\pm \\phi}{2} ) cos( \\frac{\\theta \\mp \\phi}{2} )"
+			},
+
+			{
+				"title": "",
+				"math": "sin^2(\\theta) + cos^2(\\theta) = 1"
+			},
+
+			{
+				"title": "",
+				"math": "sin^2(\\theta) - tan^2(\\theta) = 1"
+			},
+
+			{
+				"title": "",
+				"math": "e^{i \\theta} = cos(\\theta) + i sin(\\theta)"
+			},
+
+			{
+				"title": "",
+				"math": "cos(\\theta) =  \\frac{1}{2} (e^{i\\theta} + e^{-i\\theta})"
+			},
+
+			{
+				"title": "",
+				"math": "sin(\\theta) =  \\frac{1}{2i} (e^{i\\theta} - e^{-i\\theta}) "
+			}
+		]
+	},
+
+	{
+		"course": "classical-mechanics",
+		"filter": "hyperbolic-functions",
+		"title": "Hyperbolic Functions",
+		"eqs": [
+			{
+				"title": "",
+				"math": "cosh(z) = \\frac{1}{2}(e^z + e^{-z}) = cos(i z)"
+			},
+
+			{
+				"title": "",
+				"math": "sinh(z) = \\frac{1}{2}(e^z - e^{-z}) = -i sin(i z)"
+			},
+
+			{
+				"title": "",
+				"math": "tanh(z) = \\frac{sinh(z)}{cosh(z)}"
+			},
+
+			{
+				"title": "",
+				"math": "sech(z) = \\frac{1}{cosh(z)}"
+			},
+
+			{
+				"title": "",
+				"math": "cosh^2(z) - sinh^2(z) = 1"
+			},
+
+			{
+				"title": "",
+				"math": "sech^2(z) + tanh^2(z) = 1"
+			}
+		]
+	},
+
+	{
+		"course": "classical-mechanics",
+		"filter": "series-expansion",
+		"title": "Series Expansion",
+		"eqs": [
+			{
+				"title": "",
+				"math": "cosh(z) = \\frac{1}{2}(e^z + e^{-z}) = cos(i z)"
+			},
+
+			{
+				"title": "",
+				"math": "sinh(z) = \\frac{1}{2}(e^z - e^{-z}) = -i sin(i z)"
+			},
+
+			{
+				"title": "",
+				"math": "tanh(z) = \\frac{sinh(z)}{cosh(z)}"
+			},
+
+			{
+				"title": "",
+				"math": "sech(z) = \\frac{1}{cosh(z)}"
+			},
+
+			{
+				"title": "",
+				"math": "cosh^2(z) - sinh^2(z) = 1"
+			},
+
+			{
+				"title": "",
+				"math": "sech^2(z) + tanh^2(z) = 1"
+			}
+		]
+	}
+]
