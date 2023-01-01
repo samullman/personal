@@ -21,7 +21,7 @@
 	/>
 </svelte:head>
 
-<div>
+<div class="katex">
 	<h4>
 		{title}
 	</h4>
@@ -31,6 +31,12 @@
 
 <style lang="scss">
 	h4 {
+		font-size: 1rem;
 		color: rgb(84, 84, 84);
+	}
+
+	.katex {
+		margin-top: -1rem;
+		font-size: 0.85rem;
 	}
 </style>

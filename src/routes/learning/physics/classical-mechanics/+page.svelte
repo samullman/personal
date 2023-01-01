@@ -16,6 +16,12 @@
 
 <Eqs filter="series-expansion" />
 
+<Eqs filter="some-derivatives" />
+
+<Eqs filter="some-integrals" />
+
+<br />
+
 <div>
 	<a href="/learning/physics" class="cancel-background">
 		<button>

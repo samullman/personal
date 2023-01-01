@@ -12,7 +12,11 @@
 
 <div class="equation-grid">
 	{#each group.eqs as { title, math }}
-		<Katex {title} {math} />
+		<div class="item">
+			<div>
+				<Katex {title} {math} />
+			</div>
+		</div>
 	{/each}
 </div>
 
@@ -22,5 +26,14 @@
 		gap: 2em;
 		flex-wrap: wrap;
 		margin-bottom: 2em;
+
+		.item {
+			div {
+				background: lightgray;
+				padding: 1rem 1.6rem;
+				padding-bottom: 1rem;
+				border-radius: 0.75rem;
+			}
+		}
 	}
 </style>
