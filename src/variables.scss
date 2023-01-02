@@ -1,5 +1,4 @@
 // colors
-
 $dark: #262323;
 $light: #f5f3f3;
 // $light: #e8ecf2;
@@ -37,7 +36,7 @@ body {
 	background: $light;
 	color: $dark;
 	transition: background 0.2s ease;
-	font-family: 'Space Mono', monospace;
+	font-family: $body-font;
 	padding: 0.75rem;
 
 	@media screen and (min-width: $breakpoint) {

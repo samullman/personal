@@ -44,7 +44,7 @@
 <ul>
 	{#each links as { url, title }}
 		<li>
-			<a href={'/learning' + url} {title} target="_blank"> {title} </a>
+			<a href={url} {title} target="_blank"> {title} </a>
 		</li>
 	{/each}
 </ul>

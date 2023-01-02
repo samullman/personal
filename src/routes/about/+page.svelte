@@ -9,6 +9,7 @@
 </svelte:head>
 
 <h1>About</h1>
+
 <div class="profile-img">
 	<LazyImage src="/crossed-arms.png" alt="Sam Ullman" />
 </div>
@@ -19,7 +20,23 @@
 	> and been building web applications for 7 years.
 </p>
 
-<p><a href="/contact">Let's build the future together</a>.</p>
+<p><a href="/contact">Let's build together.</a></p>
+
+<h2>Check out these custom links:</h2>
+
+<ul>
+	<li>
+		<!-- <a href="/blog" title="Blog"> Blog </a> -->
+	</li>
+
+	<li>
+		<a href="/learning" title="Learning"> Learning </a>
+	</li>
+
+	<li>
+		<a href="/addresses" title="Addresses"> Addresses </a>
+	</li>
+</ul>
 
 <style lang="scss">
 	p {
@@ -33,5 +50,13 @@
 		border-radius: 8rem;
 		overflow: hidden;
 		margin-bottom: 1rem;
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 	}
 </style>

@@ -16,16 +16,16 @@
 
 <ul>
 	{#each courses as { slug, title, courses }}
-		<li>
-			{#each courses as course}
+		{#each courses as course}
+			<li>
 				<div>
 					<a href={'/learning' + slug + course.slug}>{course.title}</a>
 				</div>
 				<div>
 					Platform: <a href={course.platform.url} target="_blank">{course.platform.title}</a>
 				</div>
-			{/each}
-		</li>
+			</li>
+		{/each}
 	{/each}
 </ul>
 
@@ -43,11 +43,15 @@
 	h2 {
 		padding: 0 !important;
 		margin: 0;
+		margin-bottom: 1rem;
 	}
 
 	ul {
 		padding-left: 0;
 		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
 
 		li {
 			flex-direction: column;

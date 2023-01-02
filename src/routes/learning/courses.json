@@ -13,6 +13,19 @@
 					"url": "/learning/taylor-2005-classical-mechanics.pdf"
 				},
 				"link": "foobar"
+			},
+
+			{
+				"title": "Introduction to Electrodynamics",
+				"slug": "/intro-electrodynamics",
+				"author": "David J. Griffiths",
+				"offeredBy": "Pearson",
+				"courseNum": "",
+				"platform": {
+					"title": "Book (PDF)",
+					"url": "/learning/griffiths-2012-introduction-to-electrodynamics.pdf"
+				},
+				"link": "foobar"
 			}
 		]
 	},

@@ -22,6 +22,21 @@
 
 <br />
 
+<h2>Chapter I: Newton's Laws of Motion</h2>
+
+<h3>1.1 Classical Mechanics</h3>
+
+<ul>
+	<li>
+		Greeks, <a href="https://en.wikipedia.org/wiki/Galileo_Galilei" target="_blank" title="Galileo"
+			>Galileo</a
+		>, <a href="https://en.wikipedia.org/wiki/Isaac_Newton" target="_blank"> Newton </a>
+	</li>
+	<li>Lagrange, Hamilton</li>
+</ul>
+
+<h3>1.2 Space & Time</h3>
+
 <div>
 	<a href="/learning/physics" class="cancel-background">
 		<button>
