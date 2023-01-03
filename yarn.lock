@@ -1750,6 +1750,11 @@ prismjs@^1.17.1:
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
   integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
+pspdfkit@^2022.5.5:
+  version "2022.5.5"
+  resolved "https://registry.yarnpkg.com/pspdfkit/-/pspdfkit-2022.5.5.tgz#f6a199554fb9eb8211b295a7651d74d1deede955"
+  integrity sha512-5ANIXpf4C/Eq1BmOGyfgAxTsOAOH8ltwJBTG3p3AUFEKYY64BCpGO4iaILPvrn7/w590IdGSZcOtCWp2yOJKHQ==
+
 punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"

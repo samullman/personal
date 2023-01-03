@@ -1,6 +1,14 @@
 <script>
 	import Eqs from '../../../../components/equations/eqs.svelte';
 	import courses from '../../courses.json';
+
+	const course = courses
+		.filter((el) => {
+			return el.slug == '/physics';
+		})[0]
+		.courses.filter((el) => {
+			return el.slug == '/classical-mechanics';
+		})[0];
 </script>
 
 <svelte:head>
@@ -9,6 +17,10 @@
 </svelte:head>
 
 <h1>Classical Mechanics</h1>
+
+<div>
+	<a href={course.platform.url} target="_blank"> {course.platform.title} </a>
+</div>
 
 <Eqs filter="trigonometric-identities" />
 
