@@ -9,9 +9,9 @@
 
 <h1>Blog</h1>
 
-<h2>Articles</h2>
+<!-- <h2>Articles</h2>
 <ul>
 	<li>
 		<a href="/blog/welcome-2023"> Welcome 2023 </a>
 	</li>
-</ul>
+</ul> -->

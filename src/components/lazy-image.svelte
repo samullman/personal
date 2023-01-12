@@ -7,7 +7,7 @@
 
 <div class="lazy-img">
 	<Lazy {height} fadeOption={{ delay: 0, duration: 250 }}>
-		<img class="lazy-image rounded" {src} {alt} />
+		<img class="lazy-image" {src} {alt} />
 	</Lazy>
 </div>
 
@@ -20,5 +20,6 @@
 		max-width: 100%;
 		max-height: 88vh;
 		margin: 0.5rem auto;
+		border-radius: 0.2rem;
 	}
 </style>

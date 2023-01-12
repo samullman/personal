@@ -1,5 +1,5 @@
 <script>
-	import Lazy from 'svelte-lazy';
+	import LazyImage from '$components/lazy-image.svelte';
 </script>
 
 <svelte:head>
@@ -10,7 +10,7 @@
 
 <h1>404: Not Found</h1>
 
-<img src="https://media.giphy.com/media/wJSRkoZ8cD10Q/giphy.gif" alt="Shuffle" />
+<LazyImage src="/hero.jpeg" alt="Galaxy" />
 
 <style lang="scss">
 	h1 {
